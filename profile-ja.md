@@ -102,13 +102,12 @@ Mobile Agent Migration Based on Code Caching, *26th IEEE International Conferenc
 - 2011年03月18日: 鳥取大学大学院 工学研究科 博士前期課程 情報エレクトロニクス専攻 知能情報工学コース 研究優秀賞
 - 2011年03月18日: 鳥取大学大学院 工学研究科 博士前期課程 情報エレクトロニクス専攻 知能情報工学コース 発表優秀賞
 
-
 ## スキル
 
 + プログラミング言語: Ruby, Java, Prolog, JavaScript
 + ミドルウェア: Ruby on Rails, Sinatra, OSGi
 + OS: Windows, Mac OS X, Debian GNU/Linux
-+ Misc: LaTeX, Microsoft Office
++ その他: LaTeX, Microsoft Office
 
 ## その他
 - 2013年: FIT2013 第12回情報科学技術フォーラム アルバイト サブリーダ
