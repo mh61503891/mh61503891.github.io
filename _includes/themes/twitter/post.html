@@ -28,18 +28,21 @@
       {% include JB/tags_list %}
     </ul>
     {% endunless %}
+
+    <div class="sharing">
+      <!-- Twitter -->
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="61503891">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      <!-- Facebook -->
+      <div class="fb-like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="true"></div>
+      <!-- Comments -->
+      {% include JB/comments %}
+    </div>
     <hr>
-    <!-- Twitter -->
-    <a href="https://twitter.com/share" class="twitter-share-button" data-via="61503891">Tweet</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-    <!-- Facebook -->
-    <div class="fb-like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="true"></div>
-    <!-- Comments -->
-    {% include JB/comments %}
   </div>
 
   <div class="span3">
-    <p><strong>最近の投稿</strong></p>
+    <p><strong>最近の投稿</strong> <a href="{{ BASE_PATH }}{{ site.JB.atom_path }}"><img src="{{ BASE_PATH }}/images/feed-icon-14x14.png"></img></a></p>
     <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date: "%Y年%m月%d日" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
@@ -48,7 +51,7 @@
     <div class="pull-right">
       <a href="{{ BASE_PATH }}{{ site.JB.archive_path }}" class="btn btn-default btn-mini">投稿アーカイブ &raquo; </a>
     </div>
-    <hr>
+
   </div>
 
 </div>
