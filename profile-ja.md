@@ -97,6 +97,7 @@ Mobile Agent Migration Based on Code Caching, *26th IEEE International Conferenc
 
 ## 賞罰
 
+- 2013年09月19日: IEEE Computer Society Japan Chapter JAWS Young Researcher Award, 論文タイトル: GAPを用いたキャッシュによるエージェントの同時集中移動時における通信量の削減
 - 2013年02月04日: 鳥取大学大学院 エンカレッジ・ファンド授与
 - 2012年02月08日: 鳥取大学大学院 エンカレッジ・ファンド授与
 - 2011年03月18日: 鳥取大学大学院 工学研究科 博士前期課程 情報エレクトロニクス専攻 知能情報工学コース 研究優秀賞
