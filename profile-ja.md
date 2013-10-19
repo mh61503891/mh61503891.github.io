@@ -42,7 +42,7 @@ group: navigation
 ### 学術雑誌論文（査読付き）
 
 + **Masayuki Higashino**, Tadafumi Hayakawa, Kenichi Takahashi, Takao Kawamura, and Kazunori Sugahara. Management of Streaming Multimedia Content using Mobile Agent Technology on Pure P2P-based Distributed e-Learning System. *International Journal of Grid and Utility Computing*, ?(?):?-?, 2013 (in press).
-+ **Masayuki Higashino**, Kenichi Takahashi, Takao Kawamura, and Kazunori Sugahara. Evaluation of Program Code Caching for Mobile Agent Migrations. *Computer Technology and Application*, 4(7):?-?, 2013 (in press).
++ **Masayuki Higashino**, Kenichi Takahashi, Takao Kawamura, and Kazunori Sugahara. Evaluation of Program Code Caching for Mobile Agent Migrations. *Computer Technology and Application*, 4(7):356-363, 2013.
 + **東野 正幸**, 高橋 健一, 川村 尚生, and 菅原 一孔. キャッシュによるエージェントの移動効率化. *電子情報通信学会論文誌*, J96-D(7):1576-1584, 2013．
 
 ### 国際会議論文（査読付き）
@@ -63,8 +63,9 @@ group: navigation
 
 ### 国内会議（査読なし）
 
++ **東野 正幸**, 高橋 健一, 川村 尚生, and 菅原 一孔: モバイルエージェントの同時集中移動時における通信量の削減方式. *電気・情報関連学会中国支部第64回連合大会講演論文集 (RENTAI 2013)*, pages 246-247, 岡山大学津島キャンパス, 2013.
 + 尾崎 槙, 太田垣 真也, **東野 正幸**, 高橋 健一, 川村 尚生, and 菅原 一孔: モバイルエージェントのためのデバッグ環境の提案. *合同エージェントワークショップ＆シンポジウム2013講演論文集 (JAWS 2013)*, pages 134-138, ラフォーレ南紀白浜, 2013 (ポスター発表).
-+ 尾崎 槙, 太田垣 真也, **東野 正幸**, 高橋 健一, 川村 尚生, and 菅原 一孔: モバイルエージェントシステムのためのリモートデバッガの検討. *第12回情報科学技術フォーラム講演論文集 (FIT 2013)*, pages 215-218, 鳥取大学湖山キャンパス, 2013).
++ 尾崎 槙, 太田垣 真也, **東野 正幸**, 高橋 健一, 川村 尚生, and 菅原 一孔: モバイルエージェントシステムのためのリモートデバッガの検討. *第12回情報科学技術フォーラム講演論文集 (FIT 2013)*, pages 215-218, 鳥取大学湖山キャンパス, 2013.
 + 太田垣 真也, 尾崎 槙, **東野 正幸**, 高橋 健一, 川村 尚生, and 菅原 一孔: エージェント間の部分的な協調関係に着目したモバイルエージェントシステムのデバッグ手法の提案. *第12回情報科学技術フォーラム講演論文集 (FIT 2013)*, pages 211-213, 鳥取大学湖山キャンパス, 2013.
 + 太田垣 真也, **東野 正幸**, 高橋 健一, 川村 尚生, and 菅原 一孔: モバイルエージェントシステムのデバッガの提案. *第14回IEEE広島支部学生シンポジウムCDROM論文集 (HISS 2012)*, pages 438-441, 岡山県立大学, 2012.
 + 太田垣 真也, **東野 正幸**, 高橋 健一, 川村 尚生, and 菅原 一孔: モバイルエージェントシステムのデバッガにおけるブレイクポイント機能の提案. *電気・情報関連学会中国支部第63回連合大会講演論文集 (RENTAI 2012)*, pages 380-381, 島根大学, 2012.
