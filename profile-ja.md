@@ -14,8 +14,8 @@ group: navigation
 
 + 鳥取大学大学院 工学研究科 情報エレクトロニクス専攻 計算機AB研究室
   + 宛先: 680-8552 鳥取県 鳥取市 湖山町南 四丁目 101番
-  + Email: info [at] msyk.info
-  + Email: s032047 [at] ike.tottori-u.ac.jp
+  + Email: s032047 [at] ike.tottori-u.ac.jp (研究に関する事)
+  + Email: info [at] msyk.info (個人宛)
 
 + SNS
   + Twitter: [@61503891](https://twitter.com/61503891) <a href="https://twitter.com/61503891" class="twitter-follow-button" data-show-count="false" data-lang="ja">@61503891さんをフォロー</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
