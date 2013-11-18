@@ -3,6 +3,7 @@ layout: post
 title: "バス停検索とGoogleマップを行ったり来たりするブックマークレットを作りました。"
 description: "Googleマップからバス停検索へジャンプして周辺検索したり、バス停検索からGoogleマップへジャンプしてピンを立てるブックマークレットを作りました。"
 category:
+image: "/images/icon-180x180.jpg"
 tags: [Google,Googleマップ,バス停,バス,Bookmarklet,JavaScript]
 ---
 {% include JB/setup %}
