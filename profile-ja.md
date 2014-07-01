@@ -59,7 +59,7 @@ group: navigation
 
 ### 国際会議論文（査読付き）
 
-+ **Masayuki Higashino**, Shin Osaki, Shinya Otagaki, Kenichi Takahashi, Takao Kawamura, and Kazunori Sugahara: Debugging Mobile Agent Systems. In *Proceedings of the 15th International Conference on Information Integration and Web-based Applications & Services (iiWAS 2013)*, pages ?-?, Vienna, Austria, 2013 (accepted).
++ **Masayuki Higashino**, Shin Osaki, Shinya Otagaki, Kenichi Takahashi, Takao Kawamura, and Kazunori Sugahara: Debugging Mobile Agent Systems. In *Proceedings of the 15th International Conference on Information Integration and Web-based Applications & Services (iiWAS 2013)*, pages 667-670, Vienna, Austria, 2013.
 + **Masayuki Higashino**, Tadafumi Hayakawa, Kenichi Takahashi, Takao Kawamura, and Kazunori Sugahara: Management of Streaming Multimedia Content using Mobile Agent Technology on Pure P2P-based Distributed e-Learning System. In *Proceedings of the 27th IEEE International Conference on Advanced Information Networking and Applications (AINA 2013)*, pages 1041-1047, Barcelona, Spain, 2013 (acceptance rate: 28%).
 + **Masayuki Higashino**, Tadafumi Hayakawa, Kenichi Takahashi, Takao Kawamura, and Kazunori Sugahara: Multimedia Streaming with Caching on Pure P2P-based Distributed e-Learning System using Mobile Agent Technologies. In *Proceedings of the 2nd International Conference on Electrical Engineering and Computer Sciences (ICEECS 2013)*, pages 661-669, Tokyo, Japan, 2013.
 + **Masayuki Higashino**, Kenichi Takahashi, Takao Kawamura, and Kazunori Sugahara: Effective Mobile Agent Migration Mechanism on Load Distribution System. In *Proceedings of the 2nd International Conference on Electrical Engineering and Computer Sciences (ICEECS 2013)*, pages 653-660, Tokyo, Japan, 2013.
