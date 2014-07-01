@@ -5,10 +5,11 @@ description: ""
 group: navigation
 ---
 {% include JB/setup %}
+<div style="text-align: right;">Last updated: 2014-07-02</div>
 
 ## 東野　正幸（ひがしの　まさゆき）
 
-+ 鳥取大学大学院 工学研究科 情報エレクトロニクス専攻 博士後期課程 3年
++ 鳥取大学 産学・地域連携推進機構 プロジェクト研究員
 
 ## 連絡先
 
@@ -20,6 +21,9 @@ group: navigation
 + SNS
   + Twitter: [@61503891](https://twitter.com/61503891) <a href="https://twitter.com/61503891" class="twitter-follow-button" data-show-count="false" data-lang="ja">@61503891さんをフォロー</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
   + [Facebook](https://www.facebook.com/msyk.hgsn)
+  + [GitHub](https://github.com/mh61503891/)
+  + [Qiita](http://qiita.com/61503891/)
+  + [RubyGems](https://rubygems.org/profiles/mh61503891/)
 
 ## 所属学会
 
@@ -42,13 +46,14 @@ group: navigation
 
 ## 興味
 
-モバイルエージェント、分散システム、公共交通システム、プログラミング、教育。
+モバイルエージェント、分散システム、公共交通システム、プログラミング、教育
 
 ## 業績
 
 ### 学術雑誌論文（査読付き）
 
-+ **Masayuki Higashino**, Tadafumi Hayakawa, Kenichi Takahashi, Takao Kawamura, and Kazunori Sugahara. Management of Streaming Multimedia Content using Mobile Agent Technology on Pure P2P-based Distributed e-Learning System. *International Journal of Grid and Utility Computing*, ?(?):?-?, 2013 (in press).
++ **東野 正幸**, 高橋 健一, 川村 尚生, 菅原 一孔. GAPを用いたキャッシュによるエージェントの同時集中移動時における通信量の削減. *コンピュータソフトウェア*, 31(7):?-?, 2014. (採録決定)
++ **Masayuki Higashino**, Tadafumi Hayakawa, Kenichi Takahashi, Takao Kawamura, and Kazunori Sugahara. Management of Streaming Multimedia Content using Mobile Agent Technology on Pure P2P-based Distributed e-Learning System. *International Journal of Grid and Utility Computing*, 5(3):198-204, 2014.
 + **Masayuki Higashino**, Kenichi Takahashi, Takao Kawamura, and Kazunori Sugahara. Evaluation of Program Code Caching for Mobile Agent Migrations. *Computer Technology and Application*, 4(7):356-363, 2013.
 + **東野 正幸**, 高橋 健一, 川村 尚生, and 菅原 一孔. キャッシュによるエージェントの移動効率化. *電子情報通信学会論文誌*, J96-D(7):1576-1584, 2013．
 
@@ -86,15 +91,17 @@ group: navigation
 ## 教育
 
 + リサーチアシスタント
-  + 2013年07月16日～2014年03月31日: 「バスネット」の次世代インタフェース開発
-  + 2012年06月01日～2013年03月31日: バスネットの新ユーザインタフェース開発補助
+  + 2013年07月16日～2014年03月31日: 鳥取大学大学院 工学研究科「「バスネット」の次世代インタフェース開発」
+  + 2012年06月01日～2013年03月31日: 鳥取大学大学院 工学研究科 「バスネットの新ユーザインタフェース開発補助」
 + ティーチングアシスタント
-  + 2011年07月27日: ソフトコンピューティング論
-  + 2009年11月01日〜2010年3月31日: 情報工学演習IV
-  + 2009年10月01日〜2010年3月31日: 知能情報工学実験III
+  + 2014年05月31日〜2014年06月01日: 放送大学「初歩からのパソコン」
+  + 2011年07月27日: 鳥取大学 工学部「ソフトコンピューティング論」
+  + 2009年11月01日〜2010年3月31日: 鳥取大学 工学部「情報工学演習IV」
+  + 2009年10月01日〜2010年3月31日: 鳥取大学 工学部「知能情報工学実験III」
 
 ## 学位
 
++ 2014年03月18日: 博士(工学)
 + 2011年03月18日: 修士(工学)
 + 2009年03月18日: 学士(工学)
 
