@@ -20,6 +20,7 @@ group: navigation
 
 + SNS
   + Twitter: [@61503891](https://twitter.com/61503891) <a href="https://twitter.com/61503891" class="twitter-follow-button" data-show-count="false" data-lang="ja">@61503891さんをフォロー</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  + [Keybase.io](https://keybase.io/61503891)
   + [Facebook](https://www.facebook.com/msyk.hgsn)
   + [GitHub](https://github.com/mh61503891/)
   + [Qiita](http://qiita.com/61503891/)
