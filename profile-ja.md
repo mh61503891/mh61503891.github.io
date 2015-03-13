@@ -5,7 +5,7 @@ description: ""
 group: navigation
 ---
 {% include JB/setup %}
-<div style="text-align: right;">Last updated: 2013-03-13</div>
+<div style="text-align: right;">Last updated: 2015-03-13</div>
 
 ## 東野　正幸（ひがしの　まさゆき）
 
