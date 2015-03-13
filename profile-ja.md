@@ -5,7 +5,7 @@ description: ""
 group: navigation
 ---
 {% include JB/setup %}
-<div style="text-align: right;">Last updated: 2014-08-29</div>
+<div style="text-align: right;">Last updated: 2013-03-13</div>
 
 ## 東野　正幸（ひがしの　まさゆき）
 
@@ -95,6 +95,8 @@ group: navigation
 
 ## 教育
 
++ 講師
+  + 2015年03月10、11、14、15日: 放送大学 鳥取学習センター 特別セミナー「パソコン初歩の初歩」
 + リサーチアシスタント
   + 2013年07月16日～2014年03月31日: 鳥取大学大学院 工学研究科「「バスネット」の次世代インタフェース開発」
   + 2012年06月01日～2013年03月31日: 鳥取大学大学院 工学研究科 「バスネットの新ユーザインタフェース開発補助」
