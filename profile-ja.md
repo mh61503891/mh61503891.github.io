@@ -13,7 +13,7 @@ group: navigation
 
 ## 連絡先
 
-+ 鳥取大学 総合メディア基盤センター 情報基盤研究開発部門 助教
++ 鳥取大学 総合メディア基盤センター 情報基盤研究開発部門
   + 宛先: 680-8552 鳥取県 鳥取市 湖山町南 四丁目 101番地
   + Email: higashino [at] tottori-u.ac.jp (研究に関する事)
   + Email: msyk [at] hgsn.info (個人宛)
