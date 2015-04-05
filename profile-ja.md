@@ -5,7 +5,7 @@ description: ""
 group: navigation
 ---
 {% include JB/setup %}
-<div style="text-align: right;">Last updated: 2015-03-13</div>
+<div style="text-align: right;">Last updated: 2015-04-01</div>
 
 ## 東野　正幸（ひがしの　まさゆき）
 
@@ -91,7 +91,8 @@ group: navigation
 
 ## 研究助成
 
-+ 2014年度〜2015年度: <a href="https://kaken.nii.ac.jp/d/p/26880015.ja.html">科研費 研究活動スタート支援「モバイルエージェントのデバッグ手法に関する研究」研究代表者</a>
++ 2015年度〜2018年度: 日本学術振興会 科学研究費 基盤研究(B)「分散環境におけるモバイルエージェントの動的デバッグ手法に関する研究」研究代表者(総額4030千円)
++ 2014年度〜2015年度: 日本学術振興会 科学研究費 研究活動スタート支援「<a href="https://kaken.nii.ac.jp/d/p/26880015.ja.html">モバイルエージェントのデバッグ手法に関する研究</a>」研究代表者(総額1430千円)
 
 ## 教育
 
