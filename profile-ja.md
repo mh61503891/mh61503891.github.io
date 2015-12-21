@@ -14,17 +14,19 @@ group: navigation
 ## 連絡先
 
 + 鳥取大学 総合メディア基盤センター 情報基盤研究開発部門
-  + 宛先: 680-8552 鳥取県 鳥取市 湖山町南 四丁目 101番地
+  + 宛先: 〒680-8552 鳥取県 鳥取市 湖山町南 四丁目 101番地
   + Email: higashino [at] tottori-u.ac.jp (研究に関する事)
   + Email: msyk [at] hgsn.info (個人宛)
 
 + SNS
   + Twitter: [@61503891](https://twitter.com/61503891) <a href="https://twitter.com/61503891" class="twitter-follow-button" data-show-count="false" data-lang="ja">@61503891さんをフォロー</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-  + [Keybase.io](https://keybase.io/61503891)
   + [Facebook](https://www.facebook.com/msyk.hgsn)
   + [GitHub](https://github.com/mh61503891/)
   + [Qiita](http://qiita.com/61503891/)
   + [RubyGems](https://rubygems.org/profiles/mh61503891/)
+  + [npm](https://www.npmjs.com/~61503891)
+  + [Keybase.io](https://keybase.io/61503891)
+  + [onename](https://onename.com/61503891)
 
 ## 所属学会
 
@@ -47,7 +49,7 @@ group: navigation
 
 ## 興味
 
-モバイルエージェント、分散システム、公共交通システム、プログラミング、教育
+モバイルエージェント、分散システム、プログラミング、公共交通システム、医療情報工学、教育、オープンデータ、シビックテック
 
 ## 業績
 
@@ -91,14 +93,16 @@ group: navigation
 
 ## 研究助成
 
-+ 2015年度〜2018年度: 日本学術振興会 科学研究費 若手研究(B)「分散環境におけるモバイルエージェントの動的デバッグ手法に関する研究」研究代表者(総額4030千円)
-+ 2014年度: 日本学術振興会 科学研究費 研究活動スタート支援「<a href="https://kaken.nii.ac.jp/d/p/26880015.ja.html">モバイルエージェントのデバッグ手法に関する研究</a>」研究代表者(総額1430千円)
++ 2015年度〜2018年度: 日本学術振興会 科学研究費 若手研究（B）「[分散環境におけるモバイルエージェントの動的デバッグ手法に関する研究](https://kaken.nii.ac.jp/d/p/15K15982.ja.html)」研究代表者（総額4030千円）
++ 2014年度: 日本学術振興会 科学研究費 研究活動スタート支援「[モバイルエージェントのデバッグ手法に関する研究](https://kaken.nii.ac.jp/d/p/26880015.ja.html)」研究代表者（総額1430千円）
 
 ## 教育
 
 + 講義
   + 2015年度前期: 鳥取大学 全学共通科目「情報リテラシ」
 + 講師
+  + 2015年11月20日: 倉吉市教育委員会・鳥取大学総合メディア基盤センター連携講座「初心者向けパソコン教室」「ゼロからのパソコン入門」講師
+  + 2015年07月04日: 倉吉市教育委員会・鳥取大学総合メディア基盤センター連携講座「初心者向けパソコン教室」「ゼロからのパソコン入門」講師
   + 2015年03月10、11、14、15日: 放送大学 鳥取学習センター 特別セミナー「パソコン初歩の初歩」
 + リサーチアシスタント
   + 2013年07月16日～2014年03月31日: 鳥取大学大学院 工学研究科「「バスネット」の次世代インタフェース開発」
@@ -111,21 +115,29 @@ group: navigation
 
 ## 社会貢献
 
-+ 2014年10月25日: 平成26年度(第65回)電気・情報関連学会中国支部連合大会審査員
+### 学外委員
 
-## 学外委員
-
++ 2015年度: 平成27年度鳥取県オープンデータ・ビッグデータ活用検討会委員
++ 2015年11月11日: とっとり県民活動活性化センターWebサイト改修業者選定委員会委員
++ 2014年10月25日: 平成26年度（第65回）電気・情報関連学会中国支部連合大会審査員
 + 2014年度: 平成26年度鳥取県オープンデータ・ビッグデータ活用検討会委員
 
-## 地域活動
+### 事業助成
 
-+ 2014年02月21日: <a href="http://www.pref.tottori.lg.jp/224203.htm">オープンデータ・アイデアソンin鳥取</a>参加
++ 平成27年度鳥取力創造運動支援補助金（１次募集分）採択、Code for Tottori、第1回オープンデータ・ハッカソンin鳥取、共同実施者
++ アーバンデータチャレンジ2015地域拠点、鳥取ブロック、共同応募者
+
+### イベント開催
+
++ 2015年12月12〜13日: [第2回オープンデータ・ハッカソンin鳥取](https://code4tottori.doorkeeper.jp/events/34388)、Code for Tottoriのメンバーとして主催
++ 2015年08月08〜09日: [第1回オープンデータ・ハッカソンin鳥取](https://code4tottori.doorkeeper.jp/events/28892)、Code for Tottoriのメンバーとして主催
++ 2014年02月21日: [オープンデータ・アイデアソンin鳥取](http://www.pref.tottori.lg.jp/224203.htm)、Code for Tottoriのメンバーとして共催
 
 ## 学位
 
-+ 2014年03月18日: 博士(工学)
-+ 2011年03月18日: 修士(工学)
-+ 2009年03月18日: 学士(工学)
++ 2014年03月18日: 博士（工学）
++ 2011年03月18日: 修士（工学）
++ 2009年03月18日: 学士（工学）
 
 ## 賞罰
 
@@ -137,7 +149,7 @@ group: navigation
 
 ## スキル
 
-+ プログラミング言語: Ruby, Java, Prolog, JavaScript
++ プログラミング言語: Ruby, JavaScript, Java, Prolog
 + ミドルウェア: Ruby on Rails, Sinatra, OSGi, Android SDK
 + OS: Windows, Mac OS X, Debian GNU/Linux
 + その他: LaTeX, Microsoft Office
