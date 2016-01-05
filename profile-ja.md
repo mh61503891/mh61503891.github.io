@@ -27,6 +27,7 @@ group: navigation
   + [npm](https://www.npmjs.com/~61503891)
   + [Keybase.io](https://keybase.io/61503891)
   + [onename](https://onename.com/61503891)
+  + [Rubyist Connect](http://rubyist.co/nnect/mh61503891)
 
 ## 所属学会
 
