@@ -12,8 +12,8 @@ timezone: Japan
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://mh61503891.github.io/til
-root: /til/
+url: https://msyk.hgsn.info
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -78,7 +78,7 @@ theme: tranquilpeak
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/mh61503891/til.git
+  repo: https://github.com/mh61503891/msyk.hgsn.info.git
   branch: gh-pages
 
 feed:
