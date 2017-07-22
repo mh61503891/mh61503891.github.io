@@ -38,7 +38,7 @@ sidebar:
         profile:
             title: global.profile
             url: /profile-ja
-            icon: question
+            icon: user
         categories:
             title: global.categories
             url: /all-categories
@@ -51,25 +51,17 @@ sidebar:
             title: global.archives
             url: /all-archives
             icon: archive
-        search:
-            title: global.search
-            url: /#search
-            icon: search
-            # `open-algolia-search` classes are used to open algolia search modal
-            class: open-algolia-search
-        about:
-            title: global.about
-            url: /#about
-            icon: question
+        # search:
+        #     title: global.search
+        #     url: /#search
+        #     icon: search
+        #     # `open-algolia-search` classes are used to open algolia search modal
+        #     class: open-algolia-search
+        # about:
+        #     title: global.about
+        #     url: /#about
+        #     icon: question
     author_links:
-        github:
-            title: global.github
-            url: https://github.com/mh61503891
-            icon: github
-        # stack_overflow:
-        #     title: global.stack_overflow
-        #     url: http://stackoverflow.com/users
-        #     icon: stack-overflow
         twitter:
             title: global.twitter
             url: https://twitter.com/61503891
@@ -78,6 +70,14 @@ sidebar:
             title: global.facebook
             url: https://www.facebook.com/msyk.hgsn
             icon: facebook
+        github:
+            title: global.github
+            url: https://github.com/mh61503891
+            icon: github-alt
+        # stack_overflow:
+        #     title: global.stack_overflow
+        #     url: http://stackoverflow.com/users
+        #     icon: stack-overflow
         # google_plus:
         #     title: global.google_plus
         #     url: https://plus.google.com/
