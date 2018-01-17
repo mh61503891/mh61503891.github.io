@@ -8,7 +8,7 @@ date: 2017-07-22 14:22:28
 ### 連絡先
 
 鳥取大学 総合メディア基盤センター ICT基盤研究開発部門 助教 東野 正幸
-宛先: 〒680-8552 鳥取県 鳥取市 湖山町南 四丁目 101番地
+宛先: 〒680-8552 鳥取県鳥取市湖山町南四丁目101番地
 Email: higashino [at] tottori-u.ac.jp (業務に関する事)
 Email: msyk [at] hgsn.info (個人宛)
 
@@ -47,21 +47,21 @@ Email: msyk [at] hgsn.info (個人宛)
 + モバイルエージェントシステムの高性能化に関する研究
 + モバイルエージェントフレームワークMaglogの開発に関する研究
 + 分散型e-Learningシステムに関する研究
-+ 不審メール訓練システムに関する研究
++ 不審メール対応訓練システムに関する研究
 + オープンデータに関する研究
 
 ### 興味
 
-モバイルエージェント、分散システム、プログラミング、情報セキュリティ、公共交通システム、医療情報工学、情報教育、オープンデータ、シビックテック
+モバイルエージェント、分散システム、プログラミング、情報セキュリティ、公共交通システム、医療情報工学、情報教育、オープンデータ
 
 ### 業績
 
 #### 学術雑誌論文（査読付き）
 
 + **東野 正幸**, 高橋 健一, 川村 尚生, 菅原 一孔. GAPを用いたキャッシュによるエージェントの同時集中移動時における通信量の削減. *コンピュータソフトウェア*, 31(7):168-177, 2014.
-+ **Masayuki Higashino**, Tadafumi Hayakawa, Kenichi Takahashi, Takao Kawamura, and Kazunori Sugahara. Management of Streaming Multimedia Content using Mobile Agent Technology on Pure P2P-based Distributed e-Learning System. *International Journal of Grid and Utility Computing*, 5(3):198-204, 2014.
-+ **Masayuki Higashino**, Kenichi Takahashi, Takao Kawamura, and Kazunori Sugahara. Evaluation of Program Code Caching for Mobile Agent Migrations. *Computer Technology and Application*, 4(7):356-363, 2013.
-+ **東野 正幸**, 高橋 健一, 川村 尚生, and 菅原 一孔. キャッシュによるエージェントの移動効率化. *電子情報通信学会論文誌*, J96-D(7):1576-1584, 2013．
++ **Masayuki Higashino**, Tadafumi Hayakawa, Kenichi Takahashi, Takao Kawamura, Kazunori Sugahara. Management of Streaming Multimedia Content using Mobile Agent Technology on Pure P2P-based Distributed e-Learning System. *International Journal of Grid and Utility Computing*, 5(3):198-204, 2014.
++ **Masayuki Higashino**, Kenichi Takahashi, Takao Kawamura, Kazunori Sugahara. Evaluation of Program Code Caching for Mobile Agent Migrations. *Computer Technology and Application*, 4(7):356-363, 2013.
++ **東野 正幸**, 高橋 健一, 川村 尚生, 菅原 一孔. キャッシュによるエージェントの移動効率化. *電子情報通信学会論文誌*, J96-D(7):1576-1584, 2013.
 
 #### 国際会議論文（査読付き）
 
@@ -134,11 +134,6 @@ Email: msyk [at] hgsn.info (個人宛)
 * 鳥取市オープンデータ推進に係る職員研修, 「まちづくりにおけるオープンデータ推進の意義」講師 (2017/08/17)
 * 平成29年度鳥取県地域情報化セミナー, 「オープンソース文化とシビックテックの導入による地域情報化の推進」事例発表 (2017/5/26)
 * 鳥取大学サイエンス・アカデミー「コンピュータの可能性」シリーズ 第1回「[地域社会におけるオープンソース文化とシビックテックの導入による地域情報化の推進](http://www2.cjrd.tottori-u.ac.jp/general_science/2997)」講師, (2017/5/13)
-
-
-
-
-
 * 倉吉市教育委員会・鳥取大学総合メディア基盤センター連携講座「初心者向けパソコン教室」「ゼロからのパソコン入門」講師 (2015/07/04, 11/20)
 * 放送大学 鳥取学習センター 特別セミナー「パソコン初歩の初歩」講師  (2015/03/10-11, 14-15)
 
