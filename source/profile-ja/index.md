@@ -58,10 +58,13 @@ Email: msyk [at] hgsn.info (個人宛)
 
 #### 学術雑誌論文（査読付き）
 
-+ **東野 正幸**, 高橋 健一, 川村 尚生, 菅原 一孔. GAPを用いたキャッシュによるエージェントの同時集中移動時における通信量の削減. *コンピュータソフトウェア*, 31(7):168-177, 2014.
-+ **Masayuki Higashino**, Tadafumi Hayakawa, Kenichi Takahashi, Takao Kawamura, Kazunori Sugahara. Management of Streaming Multimedia Content using Mobile Agent Technology on Pure P2P-based Distributed e-Learning System. *International Journal of Grid and Utility Computing*, 5(3):198-204, 2014.
-+ **Masayuki Higashino**, Kenichi Takahashi, Takao Kawamura, Kazunori Sugahara. Evaluation of Program Code Caching for Mobile Agent Migrations. *Computer Technology and Application*, 4(7):356-363, 2013.
-+ **東野 正幸**, 高橋 健一, 川村 尚生, 菅原 一孔. キャッシュによるエージェントの移動効率化. *電子情報通信学会論文誌*, J96-D(7):1576-1584, 2013.
+1. **Masayuki Higashino**, Toshiya Kawato, Takao Kawamura, “A Design with Mobile Agent Architecture for Refactoring a Monolithic Service into Microservices,” *Journal of Computers*, vol. , no. , pp. -, 2018. (accepted)
+1. Toshiya Kawato, Shin-Ichi Motomura, **Masayuki Higashino**, Takao Kawamura, “Auto-Construction for Distributed Storage System reusing Used Personal Computers,” *Journal of Computers*, vol. , no. , pp. -, 2018. (accepted)
+1. **Masayuki Higashino**, Toshiya Kawato, Takao Kawamura, “A Design for Application of Mobile Agent Technology to MicroService Architecture,” *International Journal of Computer, Electrical, Automation, Control and Information Engineering*, vol. 12, no. 2, pp. 53-57, 2018.
+1. **東野 正幸**, 高橋 健一, 川村 尚生, 菅原 一孔, “GAPを用いたキャッシュによるエージェントの同時集中移動時における通信量の削減,” *コンピュータソフトウェア*, vol. 31, no. 3, pp. 168-177, 2014.
+1. **Masayuki Higashino**, Tadafumi Hayakawa, Kenichi Takahashi, Takao Kawamura, Kazunori Sugahara, “Management of Streaming Multimedia Content using Mobile Agent Technology on Pure P2P-based Distributed e-Learning System,” *International Journal of Grid and Utility Computing*, vol. 5, no. 3, pp. 198-204, 2014.
+1. **Masayuki Higashino**, Kenichi Takahashi, Takao Kawamura, Kazunori Sugahara, “Evaluation of Program Code Caching for Mobile Agent Migrations,” *Computer Technology and Application*, vol. 4, no. 7, pp. 356-363, 2013.
+1. **東野 正幸**, 高橋 健一, 川村 尚生, 菅原 一孔, “キャッシュによるエージェントの移動効率化,” *電子情報通信学会論文誌*, vol. J96-D, no. 7, pp. 1576-1584, 2013.
 
 #### 国際会議論文（査読付き）
 
