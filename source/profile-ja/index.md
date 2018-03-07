@@ -188,9 +188,10 @@ Email: msyk [at] hgsn.info (個人宛)
 
 ### 賞罰
 
-1. [合同エージェントワークショップ＆シンポジウム2017 優秀ポスター発表賞](http://jaws-web.org/event/jaws2017/award.html), 『モバイルエージェント技術によるウェブサービスのマイクロサービスアーキテクチャ化に関する一考察』 (2017/09/16)
-1. 公益財団法人 学習ソフトウェア情報研究センター 平成29年度 第33回学習デジタル教材コンクール [日本教育新聞社賞](http://www.gakujoken.or.jp/ghp/concul/sokuhou29.html), 『SNSシステムを活用した情報モラル教育教材「とりりんチャット」』, 実践的情報モラル教育研究チーム (今度 珠美, 東野 正幸, 井上 仁) (2017/06/12)
-1. [IEEE Computer Society Japan Chapter JAWS Young Researcher Award](https://www.ieee-jp.org/section/tokyo/chapter/C-16/#JAWS2013), 『GAPを用いたキャッシュによるエージェントの同時集中移動時における通信量の削減』 (2013/09/19)
+1. World Academy of Science, Engineering and Technology, The ICCNC 2018: 20th International Conference on Computer Networks and Communication, Best Paper Award, “A Design for Application of Mobile Agent Technology to MicroService Architecture”, Masayuki Higashino, Toshiya Kawato, Takao Kawamura (2018/02/05)
+1. [合同エージェントワークショップ＆シンポジウム2017 優秀ポスター発表賞](http://jaws-web.org/event/jaws2017/award.html), “モバイルエージェント技術によるウェブサービスのマイクロサービスアーキテクチャ化に関する一考察” (2017/09/16)
+1. 公益財団法人 学習ソフトウェア情報研究センター 平成29年度 第33回学習デジタル教材コンクール [日本教育新聞社賞](http://www.gakujoken.or.jp/ghp/concul/sokuhou29.html), “SNSシステムを活用した情報モラル教育教材「とりりんチャット」”, 実践的情報モラル教育研究チーム (今度 珠美, 東野 正幸, 井上 仁) (2017/06/12)
+1. [IEEE Computer Society Japan Chapter JAWS Young Researcher Award](https://www.ieee-jp.org/section/tokyo/chapter/C-16/#JAWS2013), “GAPを用いたキャッシュによるエージェントの同時集中移動時における通信量の削減” (2013/09/19)
 1. 鳥取大学大学院 エンカレッジ・ファンド授与 (2013/02/04)
 1. 鳥取大学大学院 エンカレッジ・ファンド授与 (2012/02/08)
 1. 鳥取大学大学院 工学研究科 博士前期課程 情報エレクトロニクス専攻 知能情報工学コース 研究優秀賞 (2011/03/18)
