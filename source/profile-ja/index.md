@@ -60,8 +60,8 @@ Email: msyk [at] hgsn.info (個人宛)
 
 #### 学術雑誌論文（査読付き）
 
-1. **Masayuki Higashino**, Toshiya Kawato, Takao Kawamura, “A Design with Mobile Agent Architecture for Refactoring a Monolithic Service into Microservices,” *Journal of Computers*, vol. , no. , pp. -, 2018. (accepted)
-1. Toshiya Kawato, Shin-Ichi Motomura, **Masayuki Higashino**, Takao Kawamura, “Auto-Construction for Distributed Storage System reusing Used Personal Computers,” *Journal of Computers*, vol. , no. , pp. -, 2018. (accepted)
+1. **Masayuki Higashino**, Toshiya Kawato, Takao Kawamura, “A Design with Mobile Agent Architecture for Refactoring a Monolithic Service into Microservices,” *Journal of Computers*, vol. ?, no. ?, pp. ?-?, 2018. (accepted)
+1. Toshiya Kawato, Shin-Ichi Motomura, **Masayuki Higashino**, Takao Kawamura, “Auto-Construction for Distributed Storage System reusing Used Personal Computers,” *Journal of Computers*, vol. ?, no. ?, pp. ?-?, 2018. (accepted)
 1. **Masayuki Higashino**, Toshiya Kawato, Takao Kawamura, “A Design for Application of Mobile Agent Technology to MicroService Architecture,” *International Journal of Computer, Electrical, Automation, Control and Information Engineering*, vol. 12, no. 2, pp. 53-57, 2018.
 1. **東野 正幸**, 高橋 健一, 川村 尚生, 菅原 一孔, “GAPを用いたキャッシュによるエージェントの同時集中移動時における通信量の削減,” *コンピュータソフトウェア*, vol. 31, no. 3, pp. 168-177, 2014.
 1. **Masayuki Higashino**, Tadafumi Hayakawa, Kenichi Takahashi, Takao Kawamura, Kazunori Sugahara, “Management of Streaming Multimedia Content using Mobile Agent Technology on Pure P2P-based Distributed e-Learning System,” *International Journal of Grid and Utility Computing*, vol. 5, no. 3, pp. 198-204, 2014.
@@ -83,55 +83,45 @@ Email: msyk [at] hgsn.info (個人宛)
 1. **Masayuki Higashino**, Kenichi Takahashi, Takao Kawamura, Kazunori Sugahara, “Effective Mobile Agent Migration Mechanism on Load Distribution System,” In *Proceedings of the 2nd International Conference on Electrical Engineering and Computer Sciences*, pp. 653-660, Tokyo, Japan, 2013.
 1. Tadafumi Hayakawa, **Masayuki Higashino**, Kenichi Takahashi, Takao Kawamura, Kazunori Sugahara, “Management of Multimedia Data for Streaming on a Distributed e-Learning System,” In *Proceedings of the 26th IEEE International Conference on Advanced Information Networking and Applications Workshops*, pp. 1282-1285, Fukuoka, Japan, 2012.
 1. **Masayuki Higashino**, Kenichi Takahashi, Takao Kawamura, Kazunori Sugahara, “Mobile Agent Migration Based on Code Caching,” In *Proceedings of the 26th IEEE International Conference on Advanced Information Networking and Applications Workshops*, pp. 651-656, Fukuoka, Japan, 2012.
-1. **Masayuki Higashino**, Kenichi Takahashi, Takao Kawamura, Kazunori Sugahara, “Data Traffic Reduction for Mobile Agent Migration,” In *Proceedings of the 4th International Conference on Agents and Artificial Intelligence*, pp. 351-354, Vilamoura, Portugal, 2012.
+1. **Masayuki Higashino**, Kenichi Takahashi, Takao Kawamura, Kazunori Sugahara, “Data Traffic Reduction for Mobile Agent Migration,” In *Proceedings of the 4th International Conference on Agents and Artificial Intelligence*, vol. 2, pp. 351-354, Vilamoura, Portugal, 2012.
 1. **Masayuki Higashino**, Toshihiko Sasama, Takao Kawamura, Kazunori Sugahara, “A Method of Transparent Swapping Control for Mobile Agents,” In *Proceedings of the SICE Annual Conference 2010*, pp. 575-576, Taipei, Taiwan, 2010.
 
 #### 国内会議（査読または審査あり）
 
 1. 今度 珠美, **東野 正幸**, 井上 仁, “特別支援学校高等部におけるSNSシステムを活用した情報モラル教育の実践と課題,” In *日本アクティブ・ラーニング学会第1回全国大会予稿集*, pp. 35-36, 2017.
-1. **東野 正幸**,  浅井秀子, 山田 憲昭, 澤田 廉路, “FOSS4Gによる誰でも作れる古地図アプリ基盤「考古地図（cocomaps）」の開発,” In *FOSS4G 2016 TOKYO Core Day*, 2016.
+1. **東野 正幸**, 浅井 秀子, 山田 憲昭, 澤田 廉路, “FOSS4Gによる誰でも作れる古地図アプリ基盤「考古地図（cocomaps）」の開発,” In *FOSS4G 2016 TOKYO Core Day*, 2016.
 1. **東野 正幸**, 高橋 健一, 川村 尚生, 菅原 一孔, “GAPを用いたキャッシュによるエージェントの同時集中移動時における通信量の削減,” In *合同エージェントワークショップ＆シンポジウム2013予稿集*, pp. 11-13, 2013 (採択率: 23%).
-1. **東野 正幸**, 本村 真一, 笹間 俊彦, 川村 尚生, 菅原 一孔, “キャッシュによるモバイルエージェントの移動高速化,” In *第9回情報科学技術フォーラム講演論文集*, pp. 91-95, 2010 (採択率: 50.6%).
+1. **東野 正幸**, 本村 真一, 笹間 俊彦, 川村 尚生, 菅原 一孔, “キャッシュによるモバイルエージェントの移動高速化,” In *第9回情報科学技術フォーラム講演論文集*, vol. 9, no. 4, pp. 91-95, 2010 (採択率: 50.6%).
 
 #### 研究報告（査読なし）
 
-1. **東野 正幸**, “モノリシックサービスからマイクロサービスへの構造変更を容易化するためのウェブアプリケーションフレームワークの検討,” In *情報処理学会研究報告*, pp. 1-4, 2018.
-1. **東野 正幸**, 川戸 聡也, 大森 幹之, 川村 尚生, “仮名化による個人情報の保護に配慮したパブリッククラウド型フィッシングメール対応訓練システムの運用と今後の展開,” In *情報処理学会研究報告*, pp. 1-6, 2018.
-1. Motoyuki Ohmori , **Masayuki Higashino**, Toshiya Kawato, Satoshi Fujio, Takao Kawamura, “On Automation and Orchestration of an Initial Computer Security Incident Response,” In *情報処理学会研究報告*, pp. 1-6, 2018.
-1. **東野 正幸**, 川戸 聡也, 大森 幹之, 川村 尚生, “仮名化による個人情報の保護に配慮したパブリッククラウド型フィッシングメール対応訓練システムの開発,” In *情報処理学会研究報告*, pp. 1-4, 2017.
-1. Motoyuki Ohmori , **Masayuki Higashino**, Shinichi Kawanari, Satoshi Fujio, Kiyoyuki Nakashima, Naoki Miyata, Shinichi Motomura, “On a Computer Security Incident Response System,” In *情報処理学会研究報告*, pp. 1-6, 2017.
-1. 川戸 聡也, 本村 真一, **東野 正幸**, 川村 尚生, “使用済みパソコンを再利用したストレージの構築に関する検討,” In *情報処理学会研究報告*, pp. 1-6, 2017.
-1. **東野 正幸**, “高等教育機関のためのソフトウェア資産管理ツールの開発の検討,” In *情報処理学会研究報告*, pp. 1-2, 2016.
-1. **東野 正幸**, 川村 尚生, 井上 雅彦, “強度行動障害のある人の支援を目的とした行動測定支援アプリケーションと情報共有支援システムの検討,” In *電子情報通信学会技術研究報告*, pp. 41-43, 2015.
+1. **東野 正幸**, “モノリシックサービスからマイクロサービスへの構造変更を容易化するためのウェブアプリケーションフレームワークの検討,” In *情報処理学会研究報告*, vol. 2018-DPS-174, no. 34, pp. 1-4, 2018.
+1. **東野 正幸**, 川戸 聡也, 大森 幹之, 川村 尚生, “仮名化による個人情報の保護に配慮したパブリッククラウド型フィッシングメール対応訓練システムの運用と今後の展開,” In *情報処理学会研究報告*, vol. 2018-CSEC-80, no. 19, pp. 1-6, 2018.
+1. Motoyuki Ohmori , Masayuki Higashino, Toshiya Kawato, Satoshi Fujio, Takao Kawamura, “On Automation and Orchestration of an Initial Computer Security Incident Response,” In *情報処理学会研究報告*, vol. 2018-IOT-40, no. 29, pp. 1-6, 2018.
+1. **東野 正幸**, 川戸 聡也, 大森 幹之, 川村 尚生, “仮名化による個人情報の保護に配慮したパブリッククラウド型フィッシングメール対応訓練システムの開発,” In *情報処理学会研究報告*, vol. 2017-CSEC-78, no. 38, pp. 1-4, 2017.
+1. Motoyuki Ohmori , Masayuki Higashino, Shinichi Kawanari, Satoshi Fujio, Kiyoyuki Nakashima, Naoki Miyata, Shinichi Motomura, “On a Computer Security Incident Response System,” In *情報処理学会研究報告*, vol. 2017-IOT-38, no. 11, pp. 1-6, 2017.
+1. 川戸 聡也, 本村 真一, **東野 正幸**, 川村 尚生, “使用済みパソコンを再利用したストレージの構築に関する検討,” In *情報処理学会研究報告*, vol. 2017-IOT-38, no. 16, pp. 1-6, 2017.
+1. **東野 正幸**, “高等教育機関のためのソフトウェア資産管理ツールの開発の検討,” In *情報処理学会研究報告*, vol. 2016-IOT-34, no. 3, pp. 1-2, 2016.
+1. **東野 正幸**, 川村 尚生, 井上 雅彦, “強度行動障害のある人の支援を目的とした行動測定支援アプリケーションと情報共有支援システムの検討,” In *電子情報通信学会技術研究報告*, vol. 114, no. 497, pp. 41-43, 2015.
 
 #### 国内会議（査読なし）
 
-1. **東野 正幸**, 今度 珠美, 井上 仁, “情報モラル教育のための双方向型授業の実施を目的としたチャットシステムにおける教師支援機能の検討,” In *情報処理学会第80回全国大会講演論文集*, pp. -, 2018. (to appear)
-1. 川戸 聡也, 本村 真一, **東野 正幸**, 川村 尚生, “使用済みパソコンを再利用した分散ストレージシステム,” In *情報処理学会第80回全国大会講演論文集*, pp. -, 2018. (to appear)
+1. **東野 正幸**, 今度 珠美, 井上 仁, “情報モラル教育のための双方向型授業の実施を目的としたチャットシステムにおける教師支援機能の検討,” In *情報処理学会第80回全国大会講演論文集*, pp. ?-?, 2018. (to appear)
+1. 川戸 聡也, 本村 真一, **東野 正幸**, 川村 尚生, “使用済みパソコンを再利用した分散ストレージシステム,” In *情報処理学会第80回全国大会講演論文集*, pp. ?-?, 2018. (to appear)
 1. **東野 正幸**, 川戸 聡也, 大森 幹之, 川村 尚生, “仮名化による個人情報の保護に配慮したパブリッククラウド型フィッシングメール対応訓練システムの実装と運用,” In *第21回学術情報処理研究集会発表論文集*, pp. 69-74, 2017.
 1. **東野 正幸**, 川村 尚生, “モバイルエージェント技術によるウェブサービスのマイクロサービスアーキテクチャ化に関する一考察,” In *合同エージェントワークショップ＆シンポジウム2017予稿集*, pp. 344-345, 2017.
-1. 今度 珠美, **東野 正幸**, 井上 仁, “SNSの適切な利用を学ぶ情報モラル教育教材の開発と特別支援学校での授業実践,” In *日本教育工学会第33回全国大会講演論文集*, pp. -, 2017.
+1. 今度 珠美, **東野 正幸**, 井上 仁, “SNSの適切な利用を学ぶ情報モラル教育教材の開発と特別支援学校での授業実践,” In *日本教育工学会第33回全国大会講演論文集*, pp. ?-?, 2017.
 1. **東野 正幸**, 川村 尚生, “論理的モバイルエージェントフレームワークの開発とマイクロサービスアーキテクチャとの調和,” In *合同エージェントワークショップ＆シンポジウム2016予稿集*, pp. 235-236, 2016.
-1. 井上 仁, **東野 正幸**, “メディアリテラシー教育の支援を目的としたSNSシステムの開発,” In *日本教育工学会第32回全国大会講演論文集*, pp. -, 2017.
+1. 井上 仁, **東野 正幸**, “メディアリテラシー教育の支援を目的としたSNSシステムの開発,” In *日本教育工学会第32回全国大会講演論文集*, pp. ?-?, 2016.
 1. **東野 正幸**, 灘本 拓, 高橋 健一, 川村 尚生, 菅原 一孔, “モバイルエージェントシステムのデバッグに関する研究の展望,” In *合同エージェントワークショップ＆シンポジウム2015予稿集*, pp. 185-186, 2015.
 1. 灘本 拓, 高橋 健一, **東野 正幸**, 川村 尚生, 菅原 一孔, “モバイルエージェントシステムのためのエージェント検索機能の提案,” In *合同エージェントワークショップ＆シンポジウム2015予稿集*, pp. 187-188, 2015.
-1. **東野 正幸**, 嶽 広一, 高橋 健一, 川村 尚生, 菅原 一孔, “教育機関における授業利用を想定した分散型e-Learningシステムの検討と性能評価,” In *情報処理学会第77回全国大会講演論文集*, pp. 4-515-4-516, 2015.
 1. **東野 正幸**, 灘本 拓, 高橋 健一, 川村 尚生, 菅原 一孔, “モバイルエージェントの検索機能の検討,” In *情報処理学会第77回全国大会講演論文集*, pp. 3-67-3-68, 2015.
+1. **東野 正幸**, 嶽 広一, 高橋 健一, 川村 尚生, 菅原 一孔, “教育機関における授業利用を想定した分散型e-Learningシステムの検討と性能評価,” In *情報処理学会第77回全国大会講演論文集*, pp. 4-515-4-516, 2015.
 1. 尾崎 槙, **東野 正幸**, 高橋 健一, 川村 尚生, 菅原 一孔, “モバイルエージェントの移動に対応した動的デバッグ手法の提案,” In *合同エージェントワークショップ＆シンポジウム2014予稿集*, pp. 333-336, 2014.
 1. 灘本 拓, 尾崎 槙, **東野 正幸**, 高橋 健一, 川村 尚生, 菅原 一孔, “モバイルエージェントデバッグ用検索機能の検討,” In *電気・情報関連学会中国支部第65回連合大会講演論文集*, pp. 245-246, 2014.
-1. 尾崎 槙, 太田垣 真也, **東野 正幸**, 高橋 健一, 川村 尚生, 菅原 一孔, “モバイルエージェントシステムのためのリモートデバッガの検討,” In *第12回情報科学技術フォーラム講演論文集*, pp. 215-218, 2013.
-1. 太田垣 真也, 尾崎 槙, **東野 正幸**, 高橋 健一, 川村 尚生, 菅原 一孔, “エージェント間の部分的な協調関係に着目したモバイルエージェントシステムのデバッグ手法の提案,” In *第12回情報科学技術フォーラム講演論文集*, pp. 211-213, 2013.
-1. **東野 正幸**, 本村 真一, 川村尚生, 笹間 俊彦, 菅原 一孔, “コードキャッシングによるモバイルエージェントの高速な移動手法の提案,” In *第8回情報科学技術フォーラム講演論文集*, pp. 353-358, 2009.
-1. **東野 正幸**, 高橋 健一, 川村 尚生, and 菅原 一孔: モバイルエージェントの同時集中移動時における通信量の削減方式. *電気・情報関連学会中国支部第64回連合大会講演論文集 (RENTAI 2013)*, pages 246-247, 岡山大学津島キャンパス, 2013.
-1. 尾崎 槙, 太田垣 真也, **東野 正幸**, 高橋 健一, 川村 尚生, and 菅原 一孔: モバイルエージェントのためのデバッグ環境の提案. *合同エージェントワークショップ＆シンポジウム2013講演論文集 (JAWS 2013)*, pages 134-138, ラフォーレ南紀白浜, 2013 (ポスター発表).
-1. 太田垣 真也, **東野 正幸**, 高橋 健一, 川村 尚生, and 菅原 一孔: モバイルエージェントシステムのデバッガの提案. *第14回IEEE広島支部学生シンポジウムCDROM論文集 (HISS 2012)*, pages 438-441, 岡山県立大学, 2012.
-1. 太田垣 真也, **東野 正幸**, 高橋 健一, 川村 尚生, and 菅原 一孔: モバイルエージェントシステムのデバッガにおけるブレイクポイント機能の提案. *電気・情報関連学会中国支部第63回連合大会講演論文集 (RENTAI 2012)*, pages 380-381, 島根大学, 2012.
-1. 早川 匡史, **東野 正幸**, 高橋 健一, 川村 尚生, and 菅原 一孔: 分散型e-Learningシステムの運用とその評価. *電気・情報関連学会中国支部第63回連合大会講演論文集 (RENTAI 2012)*, pages 382-383, 島根大学, 2012.
-1. 早川 匡史, **東野 正幸**, 高橋 健一, 川村 尚生, and 菅原 一孔: モバイルエージェントを用いたP2Pシステムにおけるマルチメディアコンテンツのストリーミング配信手法. *第13回IEEE広島支部学生シンポジウムCDROM論文集 (HISS 2011)*, pages 159-161, 広島大学東広島キャンパス, 2011.
-1. **東野 正幸**, 高橋 健一, 川村 尚生, and 菅原 一孔: WebSocketを用いたエージェントの移動プロトコルの提案. *電気・情報関連学会中国支部第62回連合大会講演論文集 (RENTAI 2011)*, pages 146-147, 広島工業大学, 2011.
-1. 早川 匡史, **東野 正幸**, 川村 尚生, and 菅原 一孔: 分散型e-Learningシステムにおける断片化された動画コンテンツのスムーズなストリーミング配信手法の提案. *電気・情報関連学会中国支部第62回連合大会講演論文集 (RENTAI 2011)*, page 148, 広島工業大学, 2011.
-1. **東野 正幸**, 本村 真一, 笹間 俊彦, 川村 尚生, and 菅原 一孔: モバイルエージェントの移動におけるトラフィック削減のためのコード転送方式. *第11回IEEE広島支部学生シンポジウムCDROM論文集 (HISS 2009)*, pages 357-359, 山口大学, 2009.
-1. **東野 正幸**, 本村 真一, 笹間 俊彦, 川村 尚生, and 菅原 一孔: コードキャッシングによるモバイルエージェントの高速な移動手法の提案. *電気・情報関連学会中国支部第60回連合大会講演論文集 (RENTAI 2009)*, page 191, 広島市立大学, 2009.
+1. 尾崎 槙, 太田垣 真也, **東野 正幸**, 高橋 健一, 川村 尚生, 菅原 一孔, “モバイルエージェントシステムのためのリモートデバッガの検討,” In *第12回情報科学技術フォーラム講演論文集*, vol. 12, no. 4, pp. 215-218, 2013.
+1. 太田垣 真也, 尾崎 槙, **東野 正幸**, 高橋 健一, 川村 尚生, 菅原 一孔, “エージェント間の部分的な協調関係に着目したモバイルエージェントシステムのデバッグ手法の提案,” In *第12回情報科学技術フォーラム講演論文集*, vol. 12, no. 4, pp. 211-213, 2013.
+1. **東野 正幸**, 本村 真一, 川村尚生, 笹間 俊彦, 菅原 一孔, “コードキャッシングによるモバイルエージェントの高速な移動手法の提案,” In *第8回情報科学技術フォーラム講演論文集*, vol. 8, no. 4, pp. 353-358, 2009.
 
 -----
 
