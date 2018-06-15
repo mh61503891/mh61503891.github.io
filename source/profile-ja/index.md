@@ -13,16 +13,17 @@ Email: higashino [at] tottori-u.ac.jp (業務に関する事)
 Email: msyk [at] hgsn.info (個人宛)
 
 ### SNS
-  + Twitter: [@61503891](https://twitter.com/61503891)
-  + Facebook: [msyk.hgsn](https://www.facebook.com/msyk.hgsn)
-  + GitHub: [mh61503891](https://github.com/mh61503891/)
-  + Qiita: [61503891](http://qiita.com/61503891/)
-  + RubyGems: [mh61503891](https://rubygems.org/profiles/mh61503891/)
-  + npm: [61503891](https://www.npmjs.com/~61503891)
-  + Keybase.io: [61503891](https://keybase.io/61503891)
-  + onename: [61503891](https://onename.com/61503891)
-  + Rubyist Connect: [mh61503891](https://rubyist.co/nnect/mh61503891)
-  + ORCID: [0000-0002-9920-0701](http://orcid.org/0000-0002-9920-0701)
+
++ Twitter: [@61503891](https://twitter.com/61503891)
++ Facebook: [msyk.hgsn](https://www.facebook.com/msyk.hgsn)
++ GitHub: [mh61503891](https://github.com/mh61503891/)
++ Qiita: [61503891](http://qiita.com/61503891/)
++ RubyGems: [mh61503891](https://rubygems.org/profiles/mh61503891/)
++ npm: [61503891](https://www.npmjs.com/~61503891)
++ Keybase.io: [61503891](https://keybase.io/61503891)
++ onename: [61503891](https://onename.com/61503891)
++ Rubyist Connect: [mh61503891](https://rubyist.co/nnect/mh61503891)
++ ORCID: [0000-0002-9920-0701](http://orcid.org/0000-0002-9920-0701)
 
 ### 所属学会
 
