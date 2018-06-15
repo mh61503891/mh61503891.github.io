@@ -21,7 +21,7 @@ Email: msyk [at] hgsn.info (個人宛)
   + npm: [61503891](https://www.npmjs.com/~61503891)
   + Keybase.io: [61503891](https://keybase.io/61503891)
   + onename: [61503891](https://onename.com/61503891)
-  + Rubyist Connect: [mh61503891](http://rubyist.co/nnect/)
+  + Rubyist Connect: [mh61503891](https://rubyist.co/nnect/mh61503891)
   + ORCID: [0000-0002-9920-0701](http://orcid.org/0000-0002-9920-0701)
 
 ### 所属学会
