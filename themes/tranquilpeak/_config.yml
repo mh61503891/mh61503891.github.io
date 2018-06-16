@@ -192,6 +192,24 @@ tag_pagination: true
 
 # Your Disqus shortname
 disqus_shortname:
+# Your Gitment information
+# Read https://github.com/imsun/gitment#get-started to setup Gitment
+gitment:
+    # Switch
+    enable: false
+    # Your Github ID (Github username):
+    github_id:
+    # The repo to store comments:
+    repo:
+    # Your client ID:
+    client_id:
+    # Your client secret:
+    client_secret:
+
+# -------------------
+# Integrated services
+# -------------------
+
 # Your Google analystics web property ID : UA-XXXXX-X
 google_analytics_id: UA-44054691-1
 # Your Baidu analystics web property ID : 9505a5af654a2478f93fd6c0ae4f687d
