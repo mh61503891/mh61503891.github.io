@@ -196,15 +196,15 @@ disqus_shortname:
 # Read https://github.com/imsun/gitment#get-started to setup Gitment
 gitment:
     # Switch
-    enable: false
+    enable: true
     # Your Github ID (Github username):
-    github_id:
+    github_id: mh61503891
     # The repo to store comments:
-    repo:
+    repo: msyk.hgsn.info
     # Your client ID:
-    client_id:
+    client_id: 346f7de93aab16029221
     # Your client secret:
-    client_secret:
+    client_secret: 08149eea538785bee45bcbd99749f7da7608d849
 
 # -------------------
 # Integrated services
