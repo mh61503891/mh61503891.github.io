@@ -1,6 +1,5 @@
 ---
 title: プロフィール
-date: 2017-07-22 14:22:28
 ---
 
 ## 東野 正幸 (Higashino, Masayuki)
