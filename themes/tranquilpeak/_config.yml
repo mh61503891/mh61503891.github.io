@@ -249,7 +249,7 @@ sharing_options:
         url: "https://www.facebook.com/sharer/sharer.php?u={{post.permalink}}"
     twitter:
         icon: "fa-twitter"
-        url: "https://twitter.com/intent/tweet?text={{post.permalink}}"
+        url: "https://twitter.com/intent/tweet?text={{post.title}}&url={{post.permalink}}&via=61503891"
     google_plus:
         icon: "fa-google-plus"
         url: "https://plus.google.com/share?url={{post.permalink}}"
