@@ -1,17 +1,17 @@
 ---
-title: プロフィール
+title: 東野 正幸 (Higashino, Masayuki)
+actions: false
+comments: false
 ---
 
-## 東野 正幸 (Higashino, Masayuki)
-
-### 連絡先
+## 連絡先
 
 鳥取大学 総合メディア基盤センター ICT基盤研究開発部門 助教 東野 正幸
 宛先: 〒680-8552 鳥取県鳥取市湖山町南四丁目101番地
 Email: higashino [at] tottori-u.ac.jp (業務に関する事)
 Email: msyk [at] hgsn.info (個人宛)
 
-### SNS
+## SNS
 
 - Twitter: [@61503891](https://twitter.com/61503891)
 - Facebook: [msyk.hgsn](https://www.facebook.com/msyk.hgsn)
@@ -24,7 +24,7 @@ Email: msyk [at] hgsn.info (個人宛)
 - Rubyist Connect: [mh61503891](https://rubyist.co/nnect/mh61503891)
 - ORCID: [0000-0002-9920-0701](http://orcid.org/0000-0002-9920-0701)
 
-### 所属学会
+## 所属学会
 
 - [情報処理学会](http://www.ipsj.or.jp/)
 - [日本ソフトウェア科学会](http://www.jssst.or.jp/)
@@ -33,7 +33,7 @@ Email: msyk [at] hgsn.info (個人宛)
   - IEEE Communications Society
 - [ACM](http://www.acm.org/)
 
-### 研究分野
+## 研究分野
 
 - モバイルエージェント
 - 分散システム
@@ -41,7 +41,7 @@ Email: msyk [at] hgsn.info (個人宛)
 - 情報セキュリティ
 - オープンデータ
 
-### 研究内容
+## 研究内容
 
 - モバイルエージェントシステムのデバッグ環境に関する研究
 - モバイルエージェントシステムの高性能化に関する研究
@@ -50,15 +50,15 @@ Email: msyk [at] hgsn.info (個人宛)
 - 不審メール対応訓練システムに関する研究
 - オープンデータに関する研究
 
-### 興味
+## 興味
 
 モバイルエージェント、分散システム、プログラミング、情報セキュリティ、公共交通システム、医療情報工学、情報教育、オープンデータ
 
 ---
 
-### 業績
+## 業績
 
-#### 学術雑誌論文（査読付き）
+### 学術雑誌論文（査読付き）
 
 1. **Masayuki Higashino**, Toshiya Kawato, Takao Kawamura, “A Design with Mobile Agent Architecture for Refactoring a Monolithic Service into Microservices,” *Journal of Computers*, vol. ?, no. ?, pp. ?-?, 2018. (accepted)
 1. Toshiya Kawato, Shin-Ichi Motomura, **Masayuki Higashino**, Takao Kawamura, “Auto-Construction for Distributed Storage System reusing Used Personal Computers,” *Journal of Computers*, vol. ?, no. ?, pp. ?-?, 2018. (accepted)
@@ -68,7 +68,7 @@ Email: msyk [at] hgsn.info (個人宛)
 1. **Masayuki Higashino**, Kenichi Takahashi, Takao Kawamura, Kazunori Sugahara, “Evaluation of Program Code Caching for Mobile Agent Migrations,” *Computer Technology and Application*, vol. 4, no. 7, pp. 356-363, 2013.
 1. **東野 正幸**, 高橋 健一, 川村 尚生, 菅原 一孔, “キャッシュによるエージェントの移動効率化,” *電子情報通信学会論文誌*, vol. J96-D, no. 7, pp. 1576-1584, 2013.
 
-#### 国際会議論文（査読付き）
+### 国際会議論文（査読付き）
 
 1. **Masayuki Higashino**, Toshiya Kawato, Takao Kawamura, “A Design with Mobile Agent Architecture for Refactoring a Monolithic Service into Microservices,” In *Proceedings of the 2018 6th International Conference on Network and Computing Technologies*, pp. 1-10, Singapore, 2018.
 1. Toshiya Kawato, Shin-Ichi Motomura, **Masayuki Higashino**, Takao Kawamura, “Auto-Construction for Distributed Storage System reusing Used Personal Computers,” In *Proceedings of the 2018 6th International Conference on Network and Computing Technologies*, pp. 1-8, Singapore, 2018.
@@ -86,14 +86,14 @@ Email: msyk [at] hgsn.info (個人宛)
 1. **Masayuki Higashino**, Kenichi Takahashi, Takao Kawamura, Kazunori Sugahara, “Data Traffic Reduction for Mobile Agent Migration,” In *Proceedings of the 4th International Conference on Agents and Artificial Intelligence*, vol. 2, pp. 351-354, Vilamoura, Portugal, 2012.
 1. **Masayuki Higashino**, Toshihiko Sasama, Takao Kawamura, Kazunori Sugahara, “A Method of Transparent Swapping Control for Mobile Agents,” In *Proceedings of the SICE Annual Conference 2010*, pp. 575-576, Taipei, Taiwan, 2010.
 
-#### 国内会議（査読または審査あり）
+### 国内会議（査読または審査あり）
 
 1. 今度 珠美, **東野 正幸**, 井上 仁, “特別支援学校高等部におけるSNSシステムを活用した情報モラル教育の実践と課題,” In *日本アクティブ・ラーニング学会第1回全国大会予稿集*, pp. 35-36, 2017.
 1. **東野 正幸**, 浅井 秀子, 山田 憲昭, 澤田 廉路, “FOSS4Gによる誰でも作れる古地図アプリ基盤「考古地図（cocomaps）」の開発,” In *FOSS4G 2016 TOKYO Core Day*, 2016.
 1. **東野 正幸**, 高橋 健一, 川村 尚生, 菅原 一孔, “GAPを用いたキャッシュによるエージェントの同時集中移動時における通信量の削減,” In *合同エージェントワークショップ＆シンポジウム2013予稿集*, pp. 11-13, 2013 (採択率: 23%).
 1. **東野 正幸**, 本村 真一, 笹間 俊彦, 川村 尚生, 菅原 一孔, “キャッシュによるモバイルエージェントの移動高速化,” In *第9回情報科学技術フォーラム講演論文集*, vol. 9, no. 4, pp. 91-95, 2010 (採択率: 50.6%).
 
-#### 研究報告（査読なし）
+### 研究報告（査読なし）
 
 1. **東野 正幸**, “モノリシックサービスからマイクロサービスへの構造変更を容易化するためのウェブアプリケーションフレームワークの検討,” In *情報処理学会研究報告*, vol. 2018-DPS-174, no. 34, pp. 1-4, 2018.
 1. **東野 正幸**, 川戸 聡也, 大森 幹之, 川村 尚生, “仮名化による個人情報の保護に配慮したパブリッククラウド型フィッシングメール対応訓練システムの運用と今後の展開,” In *情報処理学会研究報告*, vol. 2018-CSEC-80, no. 19, pp. 1-6, 2018.
@@ -104,7 +104,7 @@ Email: msyk [at] hgsn.info (個人宛)
 1. **東野 正幸**, “高等教育機関のためのソフトウェア資産管理ツールの開発の検討,” In *情報処理学会研究報告*, vol. 2016-IOT-34, no. 3, pp. 1-2, 2016.
 1. **東野 正幸**, 川村 尚生, 井上 雅彦, “強度行動障害のある人の支援を目的とした行動測定支援アプリケーションと情報共有支援システムの検討,” In *電子情報通信学会技術研究報告*, vol. 114, no. 497, pp. 41-43, 2015.
 
-#### 国内会議（査読なし）
+### 国内会議（査読なし）
 
 1. **東野 正幸**, 今度 珠美, 井上 仁, “情報モラル教育のための双方向型授業の実施を目的としたチャットシステムにおける教師支援機能の検討,” In *情報処理学会第80回全国大会講演論文集*, pp. 4-451-4-452, 2018.
 1. 川戸 聡也, 本村 真一, **東野 正幸**, 川村 尚生, “使用済みパソコンを再利用した分散ストレージシステム,” In *情報処理学会第80回全国大会講演論文集*, pp. 3-23-3-24, 2018.
@@ -125,61 +125,61 @@ Email: msyk [at] hgsn.info (個人宛)
 
 ---
 
-### 研究助成
+## 研究助成
 
-#### 研究代表者
+### 研究代表者
 
 1. 2018年度: 国立大学法人鳥取大学 平成30年度学長裁量経費（学長リーダーシップ経費）研究推進経費（若手研究者育成経費）「組織間協働可能な標的型メール攻撃対応訓練システムの開発」研究代表者 (総額300千円)
 1. 2015年度〜2018年度: 日本学術振興会 科学研究費 若手研究（B）「[分散環境におけるモバイルエージェントの動的デバッグ手法に関する研究](https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-15K15982/)」研究代表者（総額4,030千円）
 1. 2014年度: 日本学術振興会 科学研究費 研究活動スタート支援「[モバイルエージェントのデバッグ手法に関する研究](https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-26880015/)」研究代表者（総額1,430千円）
 
-#### 研究分担者
+### 研究分担者
 
 1. 2016年度〜2018年度: 日本学術振興会 科学研究費 基盤研究（C）「[疑似SNSを利用した実践的情報モラル教育法の開発と評価に関する研究](https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-16K01114/)」研究分担者（総額4,290千円）
 
 ---
 
-### 教育
+## 教育
 
-#### 講義
+### 講義
 
-##### 鳥取大学
+#### 鳥取大学
 
 - 鳥取大学 全学共通科目「情報リテラシ」 (2015-2018年度 前期)
 
-#### 講師
+### 講師
 
-##### 鳥取大学
+#### 鳥取大学
 
 - 鳥取大学 平成30年度教員免許状更新講習「[オープンデータ概論-地域と連携したICT教育の実現に向けて-](http://www.ces.tottori-u.ac.jp/kousin/kouza/pdf/0701_higashino.pdf)」, 講師 (2018/07/01)
 - 鳥取大学 サイエンス・アカデミー「コンピュータの可能性」シリーズ 第1回「[地域社会におけるオープンソース文化とシビックテックの導入による地域情報化の推進](http://www2.cjrd.tottori-u.ac.jp/general_science/2997)」, 講師 (2017/05/13)
 
-##### 放送大学
+#### 放送大学
 
 - 放送大学 鳥取学習センター 面接授業 基盤科目「新・初歩からのパソコン」, 講師 ([2017/12/02-03](http://forests.ouj.ac.jp/ouj-f292/dt-27387.html), [2018/06/09-10](http://forests.ouj.ac.jp/ouj-f301/dt-29164.html), 2019/01/19-20)
 - 放送大学 鳥取学習センター 特別セミナー「パソコン初歩の初歩」, 講師  ([2015/03/10-11, 14-15](http://www.campus.ouj.ac.jp/~tottori/poster/pcbasic.pdf))
 
-##### 鳥取県
+#### 鳥取県
 
 - 鳥取県自治体ICT共同化推進協議会 平成29年度第4回鳥取県自治体ICT共同化推進協議会ICT人材育成合同研修会「官民データ活用推進計画及びオープンデータ推進研修会」「自治体が公開するオープンデータの活用事例」, 講師 (2018/02/19)
 - 平成29年度鳥取県地域情報化セミナー「オープンソース文化とシビックテックの導入による地域情報化の推進」, 事例発表 (2017/05/26)
 
-##### 鳥取市
+#### 鳥取市
 
 - 鳥取市オープンデータ推進に係る職員研修「まちづくりにおけるオープンデータ推進の意義」, 講師 (2017/08/17)
 
-##### 倉吉市
+#### 倉吉市
 
 - 倉吉市教育委員会・鳥取大学総合メディア基盤センター連携講座「インターネットを用いた情報発信技術とその利用」, 講師 (2017/11/18)
 - 倉吉市教育委員会・鳥取大学総合メディア基盤センター連携講座「デジタルコンテンツの作成と発信ワークショップ〜情報機器を活用して、情報を発信しよう〜」, 講師 (2016/09/10, 09/24)
 - 倉吉市教育委員会・鳥取大学総合メディア基盤センター連携講座「初心者向けパソコン教室」「ゼロからのパソコン入門」, 講師 (2015/07/04, 11/20)
 
-#### リサーチ・アシスタント
+### リサーチ・アシスタント
 
 - 鳥取大学大学院 工学研究科「バスネットの次世代インタフェース開発」 (2013/07/16-2014/03/31)
 - 鳥取大学大学院 工学研究科 「バスネットの新ユーザインタフェース開発補助」 (2012/06/1-2013/03/31)
 
-#### ティーチング・アシスタント
+### ティーチング・アシスタント
 
 - 放送大学 鳥取学習センター「初歩からのパソコン」 (2014/05/31-06/01)
 - 鳥取大学 工学部「ソフトコンピューティング論」 (2011/07/27)
@@ -188,34 +188,34 @@ Email: msyk [at] hgsn.info (個人宛)
 
 ---
 
-### 社会貢献
+## 社会貢献
 
-#### 学外委員
+### 学外委員
 
 - 2015年度: 平成27年度鳥取県オープンデータ・ビッグデータ活用検討会委員
 - 2015年11月11日: 公益財団法人 とっとり県民活動活性化センター Webサイト改修・運用保守業務委託業者選定委員会委員
 - 2014年10月25日: 平成26年度（第65回）電気・情報関連学会中国支部連合大会審査員
 - 2014年度: 平成26年度鳥取県オープンデータ・ビッグデータ活用検討会委員
 
-#### 事業助成
+### 事業助成
 
 - 平成27年度鳥取力創造運動支援補助金（１次募集分）採択、Code for Tottori、第1回オープンデータ・ハッカソンin鳥取、共同実施者
 - アーバンデータチャレンジ2015, 2016, 2017地域拠点、鳥取ブロック、共同応募者
 
-#### イベント開催
+### イベント開催
 
 - 2015年12月12〜13日: [第2回オープンデータ・ハッカソンin鳥取](https://code4tottori.doorkeeper.jp/events/34388)、Code for Tottoriのメンバーとして主催
 - 2015年08月08〜09日: [第1回オープンデータ・ハッカソンin鳥取](https://code4tottori.doorkeeper.jp/events/28892)、Code for Tottoriのメンバーとして主催
 - 2014年02月21日: [オープンデータ・アイデアソンin鳥取](http://www.pref.tottori.lg.jp/224203.htm)、Code for Tottoriのメンバーとして共催
 
-#### イベント発表
+### イベント発表
 
 - 2015年9月29日: 東京大学空間情報科学研究センター「次世代社会基盤情報」寄付研究部門 第12回公開シンポジウム・アーバンデータチャレンジ2015「[アーバンデータチャレンジは地域創生に貢献できるか？～地域20拠点、一挙中間報告！](http://i.csis.u-tokyo.ac.jp/news/20150929/)」、講演会講師「鳥取ブロック 中間報告」、東京大学駒場第IIキャンパス（生産技術研究所内）An棟2階コンベンションホール
 - 2015年6月22日: 東京大学空間情報科学研究センター「次世代社会基盤情報」寄付研究部門 第11回公開シンポジウム・アーバンデータチャレンジ2015 「[地域の課題解決力を全国に拡げよう！～第2期・10の地域拠点＆支援拠点が新たに参戦～](http://i.csis.u-tokyo.ac.jp/news/20150622/)」、講演会講師「地域拠点・鳥取ブロックとCode for Tottoriの紹介」、東京大学駒場第IIキャンパス（生産技術研究所内）An棟2階コンベンションホール
 
 -----
 
-### 学位
+## 学位
 
 - 2014/03/18: 博士（工学）
 - 2011/03/18: 修士（工学）
@@ -223,7 +223,7 @@ Email: msyk [at] hgsn.info (個人宛)
 
 -----
 
-### 受賞
+## 受賞
 
 1. World Academy of Science, Engineering and Technology, The ICCNC 2018: 20th International Conference on Computer Networks and Communication, Best Paper Award, “A Design for Application of Mobile Agent Technology to MicroService Architecture”, Masayuki Higashino, Toshiya Kawato, Takao Kawamura (2018/02/05)
 1. [合同エージェントワークショップ＆シンポジウム2017 優秀ポスター発表賞](http://jaws-web.org/event/jaws2017/award.html), “モバイルエージェント技術によるウェブサービスのマイクロサービスアーキテクチャ化に関する一考察” (2017/09/16)
@@ -236,7 +236,7 @@ Email: msyk [at] hgsn.info (個人宛)
 
 ---
 
-### スキル
+## スキル
 
 - プログラミング言語: Ruby, JavaScript, Java, Prolog
 - ミドルウェア: Ruby on Rails, Vue, Sinatra, OSGi, Android SDK
@@ -245,7 +245,7 @@ Email: msyk [at] hgsn.info (個人宛)
 
 ---
 
-### その他
+## その他
 
 - 2013年: 第12回情報科学技術フォーラム アルバイト サブリーダ
 - 2009年: 鳥取大学 産学・地域連携推進機構 企業応対データベースシステム開発 プログラマ
