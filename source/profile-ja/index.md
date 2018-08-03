@@ -157,7 +157,7 @@ Email: msyk [at] hgsn.info (個人宛)
 
 #### 放送大学
 
-- 放送大学 鳥取学習センター 面接授業 基盤科目「新・初歩からのパソコン」, 講師 ([2017/12/02-03](http://forests.ouj.ac.jp/ouj-f292/dt-27387.html), [2018/06/09-10](http://forests.ouj.ac.jp/ouj-f301/dt-29164.html), 2019/01/19-20)
+- 放送大学 鳥取学習センター 面接授業 基盤科目「新・初歩からのパソコン」, 講師 ([2017/12/02-03](http://forests.ouj.ac.jp/ouj-f292/dt-27387.html), [2018/06/09-10](http://forests.ouj.ac.jp/ouj-f301/dt-29164.html), 2019/01/19-20, 2019/?/?)
 - 放送大学 鳥取学習センター 特別セミナー「パソコン初歩の初歩」, 講師  ([2015/03/10-11, 14-15](http://www.campus.ouj.ac.jp/~tottori/poster/pcbasic.pdf))
 
 #### 鳥取県
