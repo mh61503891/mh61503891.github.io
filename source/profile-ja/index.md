@@ -4,10 +4,20 @@ actions: false
 comments: false
 ---
 
+## 所属
+
+* 鳥取大学
+    * 総合メディア基盤センター
+        * ICT基盤研究開発部門
+          * 助教 (2015/04/01-)
+* 放送大学
+    * 鳥取学習センター
+        * 客員教員 (2019/04/01-): 非常勤講師・兼業
+
 ## 連絡先
 
+〒680-8552 鳥取県鳥取市湖山町南四丁目101番地
 鳥取大学 総合メディア基盤センター ICT基盤研究開発部門 助教 東野 正幸
-宛先: 〒680-8552 鳥取県鳥取市湖山町南四丁目101番地
 Email: higashino [at] tottori-u.ac.jp (業務に関する事)
 Email: msyk [at] hgsn.info (個人宛)
 
@@ -61,8 +71,10 @@ Email: msyk [at] hgsn.info (個人宛)
 
 ### 学術雑誌論文（査読付き）
 
-1. **Masayuki Higashino**, Toshiya Kawato, Takao Kawamura, “A Design with Mobile Agent Architecture for Refactoring a Monolithic Service into Microservices,” *Journal of Computers*, vol. ?, no. ?, pp. ?-?, 2018. (accepted)
-1. Toshiya Kawato, Shin-Ichi Motomura, **Masayuki Higashino**, Takao Kawamura, “Auto-Construction for Distributed Storage System reusing Used Personal Computers,” *Journal of Computers*, vol. ?, no. ?, pp. ?-?, 2018. (accepted)
+1. Masahiko Inoue, Keita Nakatani, **Masayuki Higashino**, “Development of behavior Record Application "Observations" for Behavior Problems,” *Japanese Journal of Behavior Analysis*, vol. ?, no. ?, pp. ?-?, 2019. (accepted)
+1. Motoyuki Ohmori, **Masayuki Higashino**, Toshiya Kawato, Satoshi Fujio, Kiyoyuki Nakashima, “On-Demand Suspicious Host Isolation Adopting Software Defined Network Approach on a Computer Security Incident Response,” *Journal of Information Processing*, vol. 27, pp. 234-243, 2019.
+1. **Masayuki Higashino**, Toshiya Kawato, Takao Kawamura, “A Design with Mobile Agent Architecture for Refactoring a Monolithic Service into Microservices,” *Journal of Computers*, vol. 13, no. 10, pp. 1192-1201, 2018.
+1. Toshiya Kawato, Shin-Ichi Motomura, **Masayuki Higashino**, Takao Kawamura, “Auto-Construction for Distributed Storage System reusing Used Personal Computers,” *Journal of Computers*, vol. 13, no. 10, pp. 1156-1163, 2018.
 1. **Masayuki Higashino**, Toshiya Kawato, Takao Kawamura, “A Design for Application of Mobile Agent Technology to MicroService Architecture,” *International Journal of Computer, Electrical, Automation, Control and Information Engineering*, vol. 12, no. 2, pp. 53-57, 2018.
 1. **東野 正幸**, 高橋 健一, 川村 尚生, 菅原 一孔, “GAPを用いたキャッシュによるエージェントの同時集中移動時における通信量の削減,” *コンピュータソフトウェア*, vol. 31, no. 3, pp. 168-177, 2014.
 1. **Masayuki Higashino**, Tadafumi Hayakawa, Kenichi Takahashi, Takao Kawamura, Kazunori Sugahara, “Management of Streaming Multimedia Content using Mobile Agent Technology on Pure P2P-based Distributed e-Learning System,” *International Journal of Grid and Utility Computing*, vol. 5, no. 3, pp. 198-204, 2014.
@@ -71,6 +83,10 @@ Email: msyk [at] hgsn.info (個人宛)
 
 ### 国際会議論文（査読付き）
 
+1. **Masayuki Higashino**, Toshiya Kawato, Motoyuki Ohmori, Takao Kawamura, “An Anti-phishing Training System for Security Awareness and Education Considering Prevention of Information Leakage,” In *Proceedings of the 5th International Conference on Information Management*, pp. 82-86, Cambridge, UK, 2019.
+1. **Masayuki Higashino**, Tamami Imado, Masashi Inoue, “Design of a Computerized Educational System about Risks of Social Networking Services for Children,” In *Proceedings of the 2019 2nd International Conference on Software and Services Engineering*, pp. 151-154, Prague, Czech Republic, 2019.
+1. Motoyuki Ohmori, Satoshi Fujio, **Masayuki Higashino**, “The Deepest Vertex First Reboot: Rebooting Network Edge Switches in a Campus Network,” In *Proceedings of the Workshops of the 33rd International Conference on Advanced Information Networking and Applications*, pp. 151-160, Matsue, Japan, 2019.
+1. Toshiya Kawato, **Masayuki Higashino**, Kenichi Takahashi, Takao Kawamura, “Proposal of e-Learning System based on integration of Client-Server and P2P Model,” In *Proceedings of the 18th International Conference on Electronics, Information, and Communication*, pp. 279-284, Auckland, New Zealand, 2019.
 1. **Masayuki Higashino**, Toshiya Kawato, Takao Kawamura, “A Design with Mobile Agent Architecture for Refactoring a Monolithic Service into Microservices,” In *Proceedings of the 2018 6th International Conference on Network and Computing Technologies*, pp. 1-10, Singapore, 2018.
 1. Toshiya Kawato, Shin-Ichi Motomura, **Masayuki Higashino**, Takao Kawamura, “Auto-Construction for Distributed Storage System reusing Used Personal Computers,” In *Proceedings of the 2018 6th International Conference on Network and Computing Technologies*, pp. 1-8, Singapore, 2018.
 1. **Masayuki Higashino**, Toshiya Kawato, Takao Kawamura, “A Design for Application of Mobile Agent Technology to MicroService Architecture,” In *Proceedings of the ICCNC 2018: 20th International Conference on Computer Networks and Communications*, pp. 422-425, Bangkok, Thailand, 2018.
@@ -96,6 +112,9 @@ Email: msyk [at] hgsn.info (個人宛)
 
 ### 研究報告（査読なし）
 
+1. Motoyuki Ohmori, **Masayuki Higashino**, Toshiya Kawato, Naoki Miyata, Kenichi Takahashi , Takao Kawamura, “On Automation and Orchestration of an Initial Computer Security Incident Response Using Centralized Incident Tracking System,” In *コンピュータセキュリティシンポジウム2018論文集*, vol. 2018, no. 2, pp. 1178-1185, 2018.
+1. Motoyuki Ohmori , **Masayuki Higashino**, “The Equal Longest Path First Reboot: Rebooting Network Edge Switches in a Campus Network,” In *電子情報通信学会技術研究報告*, vol. 118, no. 204, pp. 83-89, 2018.
+1. Motoyuki Ohmori , **Masayuki Higashino**, Toshiya Kawato, “On a Finite State Machine and Input Items for Incident Tracking System,” In *情報処理学会研究報告*, vol. 2018-IOT-42, no. 6, pp. 1-5, 2018.
 1. **東野 正幸**, “モノリシックサービスからマイクロサービスへの構造変更を容易化するためのウェブアプリケーションフレームワークの検討,” In *情報処理学会研究報告*, vol. 2018-DPS-174, no. 34, pp. 1-4, 2018.
 1. **東野 正幸**, 川戸 聡也, 大森 幹之, 川村 尚生, “仮名化による個人情報の保護に配慮したパブリッククラウド型フィッシングメール対応訓練システムの運用と今後の展開,” In *情報処理学会研究報告*, vol. 2018-CSEC-80, no. 19, pp. 1-6, 2018.
 1. Motoyuki Ohmori , Masayuki Higashino, Toshiya Kawato, Satoshi Fujio, Takao Kawamura, “On Automation and Orchestration of an Initial Computer Security Incident Response,” In *情報処理学会研究報告*, vol. 2018-IOT-40, no. 29, pp. 1-6, 2018.
@@ -146,46 +165,48 @@ Email: msyk [at] hgsn.info (個人宛)
 
 #### 鳥取大学
 
-- 鳥取大学 全学共通科目「情報リテラシ」 (2015-2018年度 前期)
+* 鳥取大学 全学共通科目「情報リテラシ」 (2015-2019年度 前期)
 
 ### 講師
 
 #### 鳥取大学
 
-- 鳥取大学 平成30年度教員免許状更新講習「[オープンデータ概論-地域と連携したICT教育の実現に向けて-](http://www.ces.tottori-u.ac.jp/kousin/kouza/pdf/0701_higashino.pdf)」, 講師 (2018/07/01)
-- 鳥取大学 サイエンス・アカデミー「コンピュータの可能性」シリーズ 第1回「[地域社会におけるオープンソース文化とシビックテックの導入による地域情報化の推進](http://www2.cjrd.tottori-u.ac.jp/general_science/2997)」, 講師 (2017/05/13)
+* 鳥取大学 教員免許状更新講習「オープンデータ概論-地域と連携したICT教育の実現に向けて-」, 講師 ([2018/07/01](http://www.ces.tottori-u.ac.jp/kousin/kouza/pdf/0701_higashino.pdf), 2019/11/23)
+* 鳥取大学 サイエンス・アカデミー「コンピュータの可能性」シリーズ 第1回「[地域社会におけるオープンソース文化とシビックテックの導入による地域情報化の推進](http://www2.cjrd.tottori-u.ac.jp/general_science/2997)」, 講師 (2017/05/13)
 
 #### 放送大学
 
-- 放送大学 鳥取学習センター 面接授業 基盤科目「新・初歩からのパソコン」, 講師 ([2017/12/02-03](http://forests.ouj.ac.jp/ouj-f292/dt-27387.html), [2018/06/09-10](http://forests.ouj.ac.jp/ouj-f301/dt-29164.html), 2019/01/19-20, 2019/?/?)
-- 放送大学 鳥取学習センター 特別セミナー「パソコン初歩の初歩」, 講師  ([2015/03/10-11, 14-15](http://www.campus.ouj.ac.jp/~tottori/poster/pcbasic.pdf))
+* 放送大学 鳥取学習センター セミナー, 講師, 「ウェブの仕組み」(2019/04/19), 「オープンデータ概論」(2019/05/17)
+* 放送大学 鳥取学習センター 面接授業 基盤科目「応用情報リテラシ」, 講師 (2020/01/04-05)
+* 放送大学 鳥取学習センター 面接授業 基盤科目「新・初歩からのパソコン」, 講師 ([2017/12/02-03](http://forests.ouj.ac.jp/ouj-f292/dt-27387.html), [2018/06/09-10](http://forests.ouj.ac.jp/ouj-f301/dt-29164.html), 2019/01/19-20, 2019/04/27-28)
+* 放送大学 鳥取学習センター 特別セミナー「パソコン初歩の初歩」, 講師 ([2015/03/10-11, 14-15](http://www.campus.ouj.ac.jp/~tottori/poster/pcbasic.pdf))
 
 #### 鳥取県
 
-- 鳥取県自治体ICT共同化推進協議会 平成29年度第4回鳥取県自治体ICT共同化推進協議会ICT人材育成合同研修会「官民データ活用推進計画及びオープンデータ推進研修会」「自治体が公開するオープンデータの活用事例」, 講師 (2018/02/19)
-- 平成29年度鳥取県地域情報化セミナー「オープンソース文化とシビックテックの導入による地域情報化の推進」, 事例発表 (2017/05/26)
+* 鳥取県自治体ICT共同化推進協議会 平成29年度第4回鳥取県自治体ICT共同化推進協議会ICT人材育成合同研修会「官民データ活用推進計画及びオープンデータ推進研修会」「自治体が公開するオープンデータの活用事例」, 講師 (2018/02/19)
+* 平成29年度鳥取県地域情報化セミナー「オープンソース文化とシビックテックの導入による地域情報化の推進」, 事例発表 (2017/05/26)
 
 #### 鳥取市
 
-- 鳥取市オープンデータ推進に係る職員研修「まちづくりにおけるオープンデータ推進の意義」, 講師 (2017/08/17)
+* 鳥取市オープンデータ推進に係る職員研修「まちづくりにおけるオープンデータ推進の意義」, 講師 (2017/08/17)
 
 #### 倉吉市
 
-- 倉吉市教育委員会・鳥取大学総合メディア基盤センター連携講座「インターネットを用いた情報発信技術とその利用」, 講師 (2017/11/18)
-- 倉吉市教育委員会・鳥取大学総合メディア基盤センター連携講座「デジタルコンテンツの作成と発信ワークショップ〜情報機器を活用して、情報を発信しよう〜」, 講師 (2016/09/10, 09/24)
-- 倉吉市教育委員会・鳥取大学総合メディア基盤センター連携講座「初心者向けパソコン教室」「ゼロからのパソコン入門」, 講師 (2015/07/04, 11/20)
+* 倉吉市教育委員会・鳥取大学総合メディア基盤センター連携講座「インターネットを用いた情報発信技術とその利用」, 講師 (2017/11/18)
+* 倉吉市教育委員会・鳥取大学総合メディア基盤センター連携講座「デジタルコンテンツの作成と発信ワークショップ〜情報機器を活用して、情報を発信しよう〜」, 講師 (2016/09/10, 09/24)
+* 倉吉市教育委員会・鳥取大学総合メディア基盤センター連携講座「初心者向けパソコン教室」「ゼロからのパソコン入門」, 講師 (2015/07/04, 11/20)
 
 ### リサーチ・アシスタント
 
-- 鳥取大学大学院 工学研究科「バスネットの次世代インタフェース開発」 (2013/07/16-2014/03/31)
-- 鳥取大学大学院 工学研究科 「バスネットの新ユーザインタフェース開発補助」 (2012/06/1-2013/03/31)
+* 鳥取大学大学院 工学研究科「バスネットの次世代インタフェース開発」 (2013/07/16-2014/03/31)
+* 鳥取大学大学院 工学研究科 「バスネットの新ユーザインタフェース開発補助」 (2012/06/1-2013/03/31)
 
 ### ティーチング・アシスタント
 
-- 放送大学 鳥取学習センター「初歩からのパソコン」 (2014/05/31-06/01)
-- 鳥取大学 工学部「ソフトコンピューティング論」 (2011/07/27)
-- 鳥取大学 工学部「情報工学演習IV」 (2009/11/01-2010/03/01)
-- 鳥取大学 工学部「知能情報工学実験III」 (2009/10/01-2010/03/01)
+* 放送大学 鳥取学習センター「初歩からのパソコン」 (2014/05/31-06/01)
+* 鳥取大学 工学部「ソフトコンピューティング論」 (2011/07/27)
+* 鳥取大学 工学部「情報工学演習IV」 (2009/11/01-2010/03/01)
+* 鳥取大学 工学部「知能情報工学実験III」 (2009/10/01-2010/03/01)
 
 ---
 
@@ -193,43 +214,51 @@ Email: msyk [at] hgsn.info (個人宛)
 
 ### 学外委員
 
-- 2015年度: 平成27年度鳥取県オープンデータ・ビッグデータ活用検討会委員
-- 2015年11月11日: 公益財団法人 とっとり県民活動活性化センター Webサイト改修・運用保守業務委託業者選定委員会委員
-- 2014年10月25日: 平成26年度（第65回）電気・情報関連学会中国支部連合大会審査員
-- 2014年度: 平成26年度鳥取県オープンデータ・ビッグデータ活用検討会委員
+* 一般社団法人 情報処理学会 モバイルコンピューティングとパーベイシブシステム研究会 運営委員 (2019/04/01-2023/03/31)
+* 平成27年度鳥取県オープンデータ・ビッグデータ活用検討会委員 (2015)
+* 公益財団法人 とっとり県民活動活性化センター Webサイト改修・運用保守業務委託業者選定委員会委員 (2015/11/11)
+* 平成26年度（第65回）電気・情報関連学会中国支部連合大会審査員 (2014/10/25)
+* 平成26年度鳥取県オープンデータ・ビッグデータ活用検討会委員 (2014)
 
 ### 事業助成
 
-- 平成27年度鳥取力創造運動支援補助金（１次募集分）採択、Code for Tottori、第1回オープンデータ・ハッカソンin鳥取、共同実施者
-- アーバンデータチャレンジ2015, 2016, 2017地域拠点、鳥取ブロック、共同応募者
+* 平成27年度鳥取力創造運動支援補助金（１次募集分）採択, [Code for Tottori](https://code4tottori.org/), 第1回オープンデータ・ハッカソンin鳥取, 共同実施者 (2015)
+* アーバンデータチャレンジ地域拠点, 鳥取ブロック, 共同応募者 (2015, 2016, 2017)
 
-### イベント開催
+### イベント開催（主催・支援）
 
-- 2015年12月12〜13日: [第2回オープンデータ・ハッカソンin鳥取](https://code4tottori.doorkeeper.jp/events/34388)、Code for Tottoriのメンバーとして主催
-- 2015年08月08〜09日: [第1回オープンデータ・ハッカソンin鳥取](https://code4tottori.doorkeeper.jp/events/28892)、Code for Tottoriのメンバーとして主催
-- 2014年02月21日: [オープンデータ・アイデアソンin鳥取](http://www.pref.tottori.lg.jp/224203.htm)、Code for Tottoriのメンバーとして共催
+* [第2回智頭宿うらみちハッカソン](https://code4tottori.connpass.com/event/79422/) (2018/03/10)
+* [学術情報APIハッカソンin鳥取（地域の研究課題を発掘しよう編）](https://code4tottori.connpass.com/event/74465/) (2017/12/16)
+* [第1回3Dモデリングワークショップ&ハッカソンin智頭宿 テーマ「智頭宿の魅力の発掘と情報発信」](https://code4tottori.doorkeeper.jp/events/65763) (2017/12/10)
+* [第1回 もくもく会](https://code4tottori.doorkeeper.jp/events/58084) (2017/03/04)
+* [第3回オープンデータ・ハッカソンin鳥取（防災・減災アプリを作ろう編）](https://code4tottori.doorkeeper.jp/events/53951) (2016/11/12, 2017/01/22)
+* [Two Weeks VolunTech Action〜二週間でエンジニアと未来を創ろう〜](https://code4tottori.doorkeeper.jp/events/38469) (2016/02/21, 2016/03/05)
+* [第2回オープンデータ・ハッカソンin鳥取](https://code4tottori.doorkeeper.jp/events/34388) (2015/12/12-13)
+* [第1回オープンデータ・ハッカソンin鳥取](https://code4tottori.doorkeeper.jp/events/28892) (2015/08/08-09)
+* [オープンデータ・アイデアソンin鳥取](http://www.pref.tottori.lg.jp/224203.htm) (2014/02/21)
 
 ### イベント発表
 
-- 2015年9月29日: 東京大学空間情報科学研究センター「次世代社会基盤情報」寄付研究部門 第12回公開シンポジウム・アーバンデータチャレンジ2015「[アーバンデータチャレンジは地域創生に貢献できるか？～地域20拠点、一挙中間報告！](http://i.csis.u-tokyo.ac.jp/news/20150929/)」、講演会講師「鳥取ブロック 中間報告」、東京大学駒場第IIキャンパス（生産技術研究所内）An棟2階コンベンションホール
-- 2015年6月22日: 東京大学空間情報科学研究センター「次世代社会基盤情報」寄付研究部門 第11回公開シンポジウム・アーバンデータチャレンジ2015 「[地域の課題解決力を全国に拡げよう！～第2期・10の地域拠点＆支援拠点が新たに参戦～](http://i.csis.u-tokyo.ac.jp/news/20150622/)」、講演会講師「地域拠点・鳥取ブロックとCode for Tottoriの紹介」、東京大学駒場第IIキャンパス（生産技術研究所内）An棟2階コンベンションホール
+* 東京大学空間情報科学研究センター「次世代社会基盤情報」寄付研究部門 第12回公開シンポジウム・アーバンデータチャレンジ2015「[アーバンデータチャレンジは地域創生に貢献できるか？～地域20拠点、一挙中間報告！](http://i.csis.u-tokyo.ac.jp/news/20150929/)」、講演会講師「鳥取ブロック 中間報告」、東京大学駒場第IIキャンパス（生産技術研究所内）An棟2階コンベンションホール (2015/09/29)
+* 東京大学空間情報科学研究センター「次世代社会基盤情報」寄付研究部門 第11回公開シンポジウム・アーバンデータチャレンジ2015 「[地域の課題解決力を全国に拡げよう！～第2期・10の地域拠点＆支援拠点が新たに参戦～](http://i.csis.u-tokyo.ac.jp/news/20150622/)」、講演会講師「地域拠点・鳥取ブロックとCode for Tottoriの紹介」、東京大学駒場第IIキャンパス（生産技術研究所内）An棟2階コンベンションホール (2015/6/22)
 
 -----
 
 ## 学位
 
-- 2014/03/18: 博士（工学）
-- 2011/03/18: 修士（工学）
-- 2009/03/18: 学士（工学）
+* 2014/03/18: 博士（工学）
+* 2011/03/18: 修士（工学）
+* 2009/03/18: 学士（工学）
 
 -----
 
 ## 受賞
 
+1. 一般社団法人 日本教育情報化振興会, ICT夢コンテスト2018, [ICT夢コンテスト優良賞](https://www.japet.or.jp/event/yume/2018prize/), “クラウド上に構築した安全！簡単！情報モラルSNS擬似体験システム教材の開発”, 実践的情報モラル教育研究チーム (今度 珠美, 東野 正幸, 井上 仁) (2018/11/20)
 1. World Academy of Science, Engineering and Technology, The ICCNC 2018: 20th International Conference on Computer Networks and Communication, Best Paper Award, “A Design for Application of Mobile Agent Technology to MicroService Architecture”, Masayuki Higashino, Toshiya Kawato, Takao Kawamura (2018/02/05)
-1. [合同エージェントワークショップ＆シンポジウム2017 優秀ポスター発表賞](http://jaws-web.org/event/jaws2017/award.html), “モバイルエージェント技術によるウェブサービスのマイクロサービスアーキテクチャ化に関する一考察” (2017/09/16)
+1. 合同エージェントワークショップ＆シンポジウム2017, [優秀ポスター発表賞](http://jaws-web.org/event/jaws2017/award.html), “モバイルエージェント技術によるウェブサービスのマイクロサービスアーキテクチャ化に関する一考察” (2017/09/16)
 1. 公益財団法人 学習ソフトウェア情報研究センター 平成29年度 第33回学習デジタル教材コンクール [日本教育新聞社賞](http://www.gakujoken.or.jp/ghp/concul/sokuhou29.html), “SNSシステムを活用した情報モラル教育教材「とりりんチャット」”, 実践的情報モラル教育研究チーム (今度 珠美, 東野 正幸, 井上 仁) (2017/06/12)
-1. [IEEE Computer Society Japan Chapter JAWS Young Researcher Award](https://www.ieee-jp.org/section/tokyo/chapter/C-16/#JAWS2013), “GAPを用いたキャッシュによるエージェントの同時集中移動時における通信量の削減” (2013/09/19)
+1. IEEE Computer Society Japan Chapter, [JAWS Young Researcher Award](https://www.ieee-jp.org/section/tokyo/chapter/C-16/#JAWS2013), “GAPを用いたキャッシュによるエージェントの同時集中移動時における通信量の削減” (2013/09/19)
 1. 鳥取大学大学院 エンカレッジ・ファンド授与 (2013/02/04)
 1. 鳥取大学大学院 エンカレッジ・ファンド授与 (2012/02/08)
 1. 鳥取大学大学院 工学研究科 博士前期課程 情報エレクトロニクス専攻 知能情報工学コース 研究優秀賞 (2011/03/18)
@@ -237,18 +266,15 @@ Email: msyk [at] hgsn.info (個人宛)
 
 ---
 
-## スキル
+## ツール類
 
-- プログラミング言語: Ruby, JavaScript, Java, Prolog
-- ミドルウェア: Ruby on Rails, Vue, Sinatra, OSGi, Android SDK
-- OS: macOS, Windows, Debian GNU/Linux
-- その他: LaTeX, Microsoft Office
+Ruby on Rails, Sinatra, OSGi, Apache Cordova, Android SDK, Docker, Docker Compose, Vagrant, VirtualBox, KVM, VMware, Ansible, Chef, Ruby, JavaScript, Java, Prolog, Shell Script, macOS, Debian GNU/Linux, CentOS, Windows, PostgreSQL, SQLite, MariaDB, Apache HTTP Server, nginx, LaTeX, Microsoft Office, Bootstrap 4, Vue, jQuery, Sass, Less, webpack, yarn, npm, Markdown, Jupyter Notebook, WordPress, GitHub Pages, Hexo, Jekyll, Git, GitHub, GitLab, Subversion, Redmine, Jenkins, GitHub Actions, zsh, bash, Atom, Emacs, Nano, Eclipse, Android Studio, Heroku, Slack, Adobe Illustrator
 
 ---
 
 ## その他
 
-- 2013年: 第12回情報科学技術フォーラム アルバイト サブリーダ
-- 2009年: 鳥取大学 産学・地域連携推進機構 企業応対データベースシステム開発 プログラマ
-- 2008年: 電気・情報関連学会中国支部第59回連合大会 アルバイト 発表会場係
-- 2006年: NPO法人 氷河・雪氷圏環境研究舎: Webサイト開発 プログラマ
+* 第12回情報科学技術フォーラム アルバイト サブリーダ (2013)
+* 鳥取大学 産学・地域連携推進機構 企業応対データベースシステム開発 プログラマ (2009)
+* 電気・情報関連学会中国支部第59回連合大会 アルバイト 発表会場係 (2008)
+* NPO法人 氷河・雪氷圏環境研究舎: Webサイト開発 プログラマ (2006)
