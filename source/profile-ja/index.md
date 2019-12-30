@@ -71,7 +71,7 @@ Email: msyk [at] hgsn.info (個人宛)
 
 ### 学術雑誌論文（査読付き）
 
-1. Masahiko Inoue, Keita Nakatani, **Masayuki Higashino**, “Development of behavior Record Application "Observations" for Behavior Problems,” *Japanese Journal of Behavior Analysis*, vol. ?, no. ?, pp. ?-?, 2019. (accepted)
+1. Masahiko Inoue, Keita Nakatani, **Masayuki Higashino**, “Development of behavior Record Application "Observations" for Behavior Problems,” *Japanese Journal of Behavior Analysis*, vol. 34, no. 1, pp. 78-86, 2019.
 1. Motoyuki Ohmori, **Masayuki Higashino**, Toshiya Kawato, Satoshi Fujio, Kiyoyuki Nakashima, “On-Demand Suspicious Host Isolation Adopting Software Defined Network Approach on a Computer Security Incident Response,” *Journal of Information Processing*, vol. 27, pp. 234-243, 2019.
 1. **Masayuki Higashino**, Toshiya Kawato, Takao Kawamura, “A Design with Mobile Agent Architecture for Refactoring a Monolithic Service into Microservices,” *Journal of Computers*, vol. 13, no. 10, pp. 1192-1201, 2018.
 1. Toshiya Kawato, Shin-Ichi Motomura, **Masayuki Higashino**, Takao Kawamura, “Auto-Construction for Distributed Storage System reusing Used Personal Computers,” *Journal of Computers*, vol. 13, no. 10, pp. 1156-1163, 2018.
@@ -83,6 +83,7 @@ Email: msyk [at] hgsn.info (個人宛)
 
 ### 国際会議論文（査読付き）
 
+1. **Masayuki Higashino**, “A Design of an Anti-Phishing Training System Collaborated with Multiple Organizations,” In *Proceedings of the 21st International Conference on Information Integration and Web-based Applications & Services*, pp. 591-594, Munich, Germany, 2019.
 1. **Masayuki Higashino**, Toshiya Kawato, Motoyuki Ohmori, Takao Kawamura, “An Anti-phishing Training System for Security Awareness and Education Considering Prevention of Information Leakage,” In *Proceedings of the 5th International Conference on Information Management*, pp. 82-86, Cambridge, UK, 2019.
 1. **Masayuki Higashino**, Tamami Imado, Masashi Inoue, “Design of a Computerized Educational System about Risks of Social Networking Services for Children,” In *Proceedings of the 2019 2nd International Conference on Software and Services Engineering*, pp. 151-154, Prague, Czech Republic, 2019.
 1. Motoyuki Ohmori, Satoshi Fujio, **Masayuki Higashino**, “The Deepest Vertex First Reboot: Rebooting Network Edge Switches in a Campus Network,” In *Proceedings of the Workshops of the 33rd International Conference on Advanced Information Networking and Applications*, pp. 151-160, Matsue, Japan, 2019.
@@ -112,6 +113,8 @@ Email: msyk [at] hgsn.info (個人宛)
 
 ### 研究報告（査読なし）
 
+1. **東野 正幸**, “組織間協働可能な標的型メール攻撃対応訓練システムの設計,” In *情報処理学会研究報告*, vol. 2019-MBL-93, no. 20, pp.1-5, 2019.
+1. 川戸 聡也, **東野 正幸**, 高橋 健一, 川村 尚生, “コンピュータが有するストレージの余剰容量を分散ストレージとして活用する試み,” In *情報処理学会研究報告*, vol. 2019-DPS-180, no. 19, pp. 1-6, 2019.
 1. Motoyuki Ohmori, **Masayuki Higashino**, Toshiya Kawato, Naoki Miyata, Kenichi Takahashi , Takao Kawamura, “On Automation and Orchestration of an Initial Computer Security Incident Response Using Centralized Incident Tracking System,” In *コンピュータセキュリティシンポジウム2018論文集*, vol. 2018, no. 2, pp. 1178-1185, 2018.
 1. Motoyuki Ohmori , **Masayuki Higashino**, “The Equal Longest Path First Reboot: Rebooting Network Edge Switches in a Campus Network,” In *電子情報通信学会技術研究報告*, vol. 118, no. 204, pp. 83-89, 2018.
 1. Motoyuki Ohmori , **Masayuki Higashino**, Toshiya Kawato, “On a Finite State Machine and Input Items for Incident Tracking System,” In *情報処理学会研究報告*, vol. 2018-IOT-42, no. 6, pp. 1-5, 2018.
@@ -143,12 +146,17 @@ Email: msyk [at] hgsn.info (個人宛)
 1. 太田垣 真也, 尾崎 槙, **東野 正幸**, 高橋 健一, 川村 尚生, 菅原 一孔, “エージェント間の部分的な協調関係に着目したモバイルエージェントシステムのデバッグ手法の提案,” In *第12回情報科学技術フォーラム講演論文集*, vol. 12, no. 4, pp. 211-213, 2013.
 1. **東野 正幸**, 本村 真一, 川村尚生, 笹間 俊彦, 菅原 一孔, “コードキャッシングによるモバイルエージェントの高速な移動手法の提案,” In *第8回情報科学技術フォーラム講演論文集*, vol. 8, no. 4, pp. 353-358, 2009.
 
+### その他
+
+1. **東野 正幸**, “個人情報の保護に配慮したパブリッククラウド型フィッシングメール対応訓練システムに関する研究,” コンピュータセキュリティシンポジウム2019, ポスター発表, 2019.
+
 ---
 
 ## 研究助成
 
 ### 研究代表者
 
+1. 2019年度: 国立大学法人鳥取大学 2019年度学長裁量経費（学長リーダーシップ経費）研究推進経費（若手研究者育成経費）「組織間協働可能な標的型メール攻撃対応訓練システムの開発」研究代表者 (総額900千円)
 1. 2018年度: 国立大学法人鳥取大学 平成30年度学長裁量経費（学長リーダーシップ経費）研究推進経費（若手研究者育成経費）「組織間協働可能な標的型メール攻撃対応訓練システムの開発」研究代表者 (総額300千円)
 1. 2015年度〜2018年度: 日本学術振興会 科学研究費 若手研究（B）「[分散環境におけるモバイルエージェントの動的デバッグ手法に関する研究](https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-15K15982/)」研究代表者（総額4,030千円）
 1. 2014年度: 日本学術振興会 科学研究費 研究活動スタート支援「[モバイルエージェントのデバッグ手法に関する研究](https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-26880015/)」研究代表者（総額1,430千円）
@@ -171,13 +179,14 @@ Email: msyk [at] hgsn.info (個人宛)
 
 #### 鳥取大学
 
-* 鳥取大学 教員免許状更新講習「オープンデータ概論-地域と連携したICT教育の実現に向けて-」, 講師 ([2018/07/01](http://www.ces.tottori-u.ac.jp/kousin/kouza/pdf/0701_higashino.pdf), 2019/11/23)
+* 鳥取大学 ジュニアドクター育成塾 2019年度 環境基礎プログラム「[情報リテラシー講座](https://junior-doctor.fuzoku.tottori-u.ac.jp/31syllabus01.html)」, 講師 (2019/07/28)
+* 鳥取大学 教員免許状更新講習「オープンデータ概論-地域と連携したICT教育の実現に向けて-」, 講師 (2018/07/01, 2019/11/23)
 * 鳥取大学 サイエンス・アカデミー「コンピュータの可能性」シリーズ 第1回「[地域社会におけるオープンソース文化とシビックテックの導入による地域情報化の推進](http://www2.cjrd.tottori-u.ac.jp/general_science/2997)」, 講師 (2017/05/13)
 
 #### 放送大学
 
-* 放送大学 鳥取学習センター セミナー, 講師, 「ウェブの仕組み」(2019/04/19), 「オープンデータ概論」(2019/05/17)
-* 放送大学 鳥取学習センター 面接授業 基盤科目「応用情報リテラシ」, 講師 (2020/01/04-05)
+* 放送大学 鳥取学習センター セミナー, 講師, 「ウェブの仕組み」(2019/04/19), 「オープンデータ概論」(2019/05/17), 「プログラミング入門」(2019/12/13), 「分散システム入門」(2019/12/20)
+* 放送大学 鳥取学習センター 面接授業 基盤科目「応用情報リテラシー」, 講師 (2020/01/04-05)
 * 放送大学 鳥取学習センター 面接授業 基盤科目「新・初歩からのパソコン」, 講師 ([2017/12/02-03](http://forests.ouj.ac.jp/ouj-f292/dt-27387.html), [2018/06/09-10](http://forests.ouj.ac.jp/ouj-f301/dt-29164.html), 2019/01/19-20, 2019/04/27-28)
 * 放送大学 鳥取学習センター 特別セミナー「パソコン初歩の初歩」, 講師 ([2015/03/10-11, 14-15](http://www.campus.ouj.ac.jp/~tottori/poster/pcbasic.pdf))
 
@@ -212,13 +221,19 @@ Email: msyk [at] hgsn.info (個人宛)
 
 ## 社会貢献
 
-### 学外委員
+### 学外委員等（長期）
 
-* 一般社団法人 情報処理学会 モバイルコンピューティングとパーベイシブシステム研究会 運営委員 (2019/04/01-2023/03/31)
+* 一般社団法人 情報処理学会 モバイルコンピューティングとパーベイシブシステム研究会 運営委員 (2019/04/01-2021/03/31)
 * 平成27年度鳥取県オープンデータ・ビッグデータ活用検討会委員 (2015)
+* 平成26年度鳥取県オープンデータ・ビッグデータ活用検討会委員 (2014)
+
+### 学外委員等（短期）
+
+* 一般社団法人 情報処理学会 第93回MBL・第79回ITS合同研究発表会 プログラム委員, ([2019/11/20-22](https://www.ipsj.or.jp/kenkyukai/event/mbl93its79.html))
+* 一般社団法人 情報処理学会 第93回MBL・第79回ITS合同研究発表会「WiP優秀発表の再発表セッション」座長 ([2019/11/21](https://www.ipsj.or.jp/kenkyukai/event/mbl93its79.html))
+* 令和元年度（第70回）電気・情報関連学会中国支部連合大会 一般セッション「計算機応用(2)」 座長 (2019/10/26)
 * 公益財団法人 とっとり県民活動活性化センター Webサイト改修・運用保守業務委託業者選定委員会委員 (2015/11/11)
 * 平成26年度（第65回）電気・情報関連学会中国支部連合大会審査員 (2014/10/25)
-* 平成26年度鳥取県オープンデータ・ビッグデータ活用検討会委員 (2014)
 
 ### 事業助成
 
@@ -255,7 +270,6 @@ Email: msyk [at] hgsn.info (個人宛)
 ## 受賞
 
 1. 一般社団法人 日本教育情報化振興会, ICT夢コンテスト2018, [ICT夢コンテスト優良賞](https://www.japet.or.jp/event/yume/2018prize/), “クラウド上に構築した安全！簡単！情報モラルSNS擬似体験システム教材の開発”, 実践的情報モラル教育研究チーム (今度 珠美, 東野 正幸, 井上 仁) (2018/11/20)
-1. World Academy of Science, Engineering and Technology, The ICCNC 2018: 20th International Conference on Computer Networks and Communication, Best Paper Award, “A Design for Application of Mobile Agent Technology to MicroService Architecture”, Masayuki Higashino, Toshiya Kawato, Takao Kawamura (2018/02/05)
 1. 合同エージェントワークショップ＆シンポジウム2017, [優秀ポスター発表賞](http://jaws-web.org/event/jaws2017/award.html), “モバイルエージェント技術によるウェブサービスのマイクロサービスアーキテクチャ化に関する一考察” (2017/09/16)
 1. 公益財団法人 学習ソフトウェア情報研究センター 平成29年度 第33回学習デジタル教材コンクール [日本教育新聞社賞](http://www.gakujoken.or.jp/ghp/concul/sokuhou29.html), “SNSシステムを活用した情報モラル教育教材「とりりんチャット」”, 実践的情報モラル教育研究チーム (今度 珠美, 東野 正幸, 井上 仁) (2017/06/12)
 1. IEEE Computer Society Japan Chapter, [JAWS Young Researcher Award](https://www.ieee-jp.org/section/tokyo/chapter/C-16/#JAWS2013), “GAPを用いたキャッシュによるエージェントの同時集中移動時における通信量の削減” (2013/09/19)
@@ -268,12 +282,14 @@ Email: msyk [at] hgsn.info (個人宛)
 
 ## ツール類
 
-Ruby on Rails, Sinatra, OSGi, Apache Cordova, Android SDK, Docker, Docker Compose, Vagrant, VirtualBox, KVM, VMware, Ansible, Chef, Ruby, JavaScript, Java, Prolog, Shell Script, macOS, Debian GNU/Linux, CentOS, Windows, PostgreSQL, SQLite, MariaDB, Apache HTTP Server, nginx, LaTeX, Microsoft Office, Bootstrap 4, Vue, jQuery, Sass, Less, webpack, yarn, npm, Markdown, Jupyter Notebook, WordPress, GitHub Pages, Hexo, Jekyll, Git, GitHub, GitLab, Subversion, Redmine, Jenkins, GitHub Actions, zsh, bash, Atom, Emacs, Nano, Eclipse, Android Studio, Heroku, Slack, Adobe Illustrator
+Ruby on Rails, Sinatra, OSGi, Apache Cordova, Android SDK, Docker, Docker Compose, Vagrant, VirtualBox, KVM, VMware, Ansible, Chef, Ruby, JavaScript, Java, Prolog, Shell Script, macOS, Debian GNU/Linux, CentOS, Windows, PostgreSQL, SQLite, MariaDB, Apache HTTP Server, nginx, LaTeX, Microsoft Office, Bootstrap 4, Vue, jQuery, Sass, Less, webpack, yarn, npm, Markdown, Jupyter Notebook, WordPress, GitHub Pages, Hexo, Jekyll, Git, GitHub, GitLab, Subversion, Redmine, Jenkins, GitHub Actions, zsh, bash, Atom, Emacs, Nano, IntelliJ IDEA, Android Studio, Eclipse, Heroku, Slack, Adobe Illustrator
 
 ---
 
 ## その他
 
+* 放送大学 鳥取学習センター機関紙『ぷりずむ』2019年10月号 巻頭言「多要素認証のすすめ」 (2009/09/20)
+* 放送大学 印刷教材フレンドリー・ アドバイス制度における印刷教材改善のための助言レポート『情報技術が拓く人間理解の最先端（'20）』(2019/09/20)
 * 第12回情報科学技術フォーラム アルバイト サブリーダ (2013)
 * 鳥取大学 産学・地域連携推進機構 企業応対データベースシステム開発 プログラマ (2009)
 * 電気・情報関連学会中国支部第59回連合大会 アルバイト 発表会場係 (2008)
