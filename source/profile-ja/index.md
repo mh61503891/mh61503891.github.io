@@ -23,43 +23,43 @@ Email: msyk [at] hgsn.info (個人宛)
 
 ## SNS
 
-- Twitter: [@61503891](https://twitter.com/61503891)
-- Facebook: [msyk.hgsn](https://www.facebook.com/msyk.hgsn)
-- GitHub: [mh61503891](https://github.com/mh61503891/)
-    - Sourcerer: [mh61503891](https://sourcerer.io/mh61503891)
-- Qiita: [61503891](http://qiita.com/61503891/)
-- RubyGems: [mh61503891](https://rubygems.org/profiles/mh61503891/)
-- npm: [61503891](https://www.npmjs.com/~61503891)
-- Keybase.io: [61503891](https://keybase.io/61503891)
-- onename: [61503891](https://onename.com/61503891)
-- Rubyist Connect: [mh61503891](https://rubyist.co/nnect/mh61503891)
-- ORCID: [0000-0002-9920-0701](http://orcid.org/0000-0002-9920-0701)
+* Twitter: [@61503891](https://twitter.com/61503891)
+* Facebook: [msyk.hgsn](https://www.facebook.com/msyk.hgsn)
+* GitHub: [mh61503891](https://github.com/mh61503891/)
+    * Sourcerer: [mh61503891](https://sourcerer.io/mh61503891)
+* Qiita: [61503891](http://qiita.com/61503891/)
+* RubyGems: [mh61503891](https://rubygems.org/profiles/mh61503891/)
+* npm: [61503891](https://www.npmjs.com/~61503891)
+* Keybase.io: [61503891](https://keybase.io/61503891)
+* onename: [61503891](https://onename.com/61503891)
+* Rubyist Connect: [mh61503891](https://rubyist.co/nnect/mh61503891)
+* ORCID: [0000-0002-9920-0701](http://orcid.org/0000-0002-9920-0701)
 
 ## 所属学会
 
-- [情報処理学会](http://www.ipsj.or.jp/)
-- [日本ソフトウェア科学会](http://www.jssst.or.jp/)
-- [IEEE]((http://www.ieee.org/)
-  - IEEE Computer Society
-  - IEEE Communications Society
-- [ACM](http://www.acm.org/)
+* [情報処理学会](http://www.ipsj.or.jp/)
+* [日本ソフトウェア科学会](http://www.jssst.or.jp/)
+* [IEEE]((http://www.ieee.org/)
+    * IEEE Computer Society
+    * IEEE Communications Society
+* [ACM](http://www.acm.org/)
 
 ## 研究分野
 
-- モバイルエージェント
-- 分散システム
-- エージェントシステム
-- 情報セキュリティ
-- オープンデータ
+* モバイルエージェント
+* 分散システム
+* エージェントシステム
+* 情報セキュリティ
+* オープンデータ
 
 ## 研究内容
 
-- モバイルエージェントシステムのデバッグ環境に関する研究
-- モバイルエージェントシステムの高性能化に関する研究
-- モバイルエージェントフレームワークMaglogの開発に関する研究
-- 分散型e-Learningシステムに関する研究
-- 不審メール対応訓練システムに関する研究
-- オープンデータに関する研究
+* モバイルエージェントシステムのデバッグ環境に関する研究
+* モバイルエージェントシステムの高性能化に関する研究
+* モバイルエージェントフレームワークMaglogの開発に関する研究
+* 分散型e-Learningシステムに関する研究
+* 不審メール対応訓練システムに関する研究
+* オープンデータに関する研究
 
 ## 興味
 
