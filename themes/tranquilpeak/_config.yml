@@ -129,7 +129,7 @@ author:
     # Overwritten by your gravatar image if `gravatar_email` is filled
     picture: mh61503891.png
     # Your Twitter username without the @. E.g : `tranquilpeak`
-    twitter: 61503891
+    twitter: "61503891"
     # Your personal google plus profile id, not your blog or business page id.
     # E.g : `+JohnDoe` or `123812884128439`
     google_plus:
