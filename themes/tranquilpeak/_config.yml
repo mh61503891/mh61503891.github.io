@@ -32,7 +32,7 @@ sidebar:
     menu:
         home:
             title: global.home
-            url: ./
+            url: /
             icon: fa fa-home
         profile:
             title: global.profile
@@ -50,17 +50,25 @@ sidebar:
             title: global.archives
             url: /all-archives
             icon: fa fa-archive
-        # search:
-        #     title: global.search
-        #     url: /#search
-        #     icon: fa fa-search
-        #     # `open-algolia-search` classes are used to open algolia search modal
-        #     class: open-algolia-search
-        # about:
-        #     title: global.about
-        #     url: /#about
-        #     icon: fa fa-question
+#        search:
+#            title: global.search
+#            url: "#search"
+#            icon: fa fa-search
+#            # `open-algolia-search` classes are used to open algolia search modal
+#            class: open-algolia-search
+#        about:
+#            title: global.about
+#            url: "#about"
+#            icon: fa fa-question
     author_links:
+        github:
+            title: global.github
+            url: https://github.com/
+            icon: fab fa-github
+#        stack_overflow:
+#            title: global.stack_overflow
+#            url: http://stackoverflow.com/users
+#            icon: fab fa-stack-overflow
         twitter:
             title: global.twitter
             url: https://twitter.com/
@@ -69,26 +77,18 @@ sidebar:
             title: global.facebook
             url: https://facebook.com/
             icon: fab fa-facebook
-        github:
-            title: global.github
-            url: https://github.com/
-            icon: fab fa-github
-        # stack_overflow:
-        #     title: global.stack_overflow
-        #     url: http://stackoverflow.com/users
-        #     icon: fab fa-stack-overflow
-        # google_plus:
-        #     title: global.google_plus
-        #     url: https://plus.google.com/
-        #     icon: fab fa-google-plus
-        # linked_in:
-        #     title: global.linkedin
-        #     url: https://www.linkedin.com/profile/
-        #     icon: fab fa-linkedin
-        # mail:
-        #     title: global.mail
-        #     url: mailto
-        #     icon: fa fa-envelope
+#        google_plus:
+#            title: global.google_plus
+#            url: https://plus.google.com/
+#            icon: fab fa-google-plus
+#        linked_in:
+#            title: global.linkedin
+#            url: https://www.linkedin.com/profile/
+#            icon: fab fa-linkedin
+#        mail:
+#            title: global.mail
+#            url: mailto
+#            icon: fa fa-envelope
     rss:
         rss:
             title: global.rss
@@ -279,10 +279,17 @@ sharing_options:
     twitter:
         icon: "fab fa-twitter"
         url: "https://twitter.com/intent/tweet?text={{post.title}}&url={{post.permalink}}&via=61503891"
-    # google_plus:
-    #     icon: "fab fa-google-plus"
-    #     url: "https://plus.google.com/share?url={{post.permalink}}"
-    # Asian social networks
+#    google_plus:
+#        icon: "fab fa-google-plus"
+#        url: "https://plus.google.com/share?url={{post.permalink}}"
+# Business Social Networks
+#    linkedin:
+#        icon: "fab fa-linkedin"
+#        url: "https://www.linkedin.com/shareArticle?mini=true&url={{post.permalink}}"
+#    xing:
+#        icon: "fab fa-xing"
+#        url: "https://www.xing.com/spi/shares/new?url={{post.permalink}}"
+# Asian social networks
 #    weibo:
 #        title: "Weibo"
 #        icon: "fab fa-weibo"
@@ -299,7 +306,7 @@ sharing_options:
 #        title: "Renren"
 #        icon: "fab fa-renren"
 #        url: "http://widget.renren.com/dialog/share?resourceUrl={{post.permalink}}"
-    # Russian social networks
+# Russian social networks
 #    vk:
 #        title: "VK"
 #        icon: "fab fa-vk"
