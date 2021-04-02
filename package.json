@@ -6,6 +6,8 @@
     "version": "5.4.0"
   },
   "scripts": {
+    "server": "hexo server",
+    "deploy": "hexo clean && hexo deploy --generate",
     "clean": "find . -type f -name .DS_Store -delete; exit 0"
   },
   "dependencies": {
