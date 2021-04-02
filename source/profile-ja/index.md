@@ -39,7 +39,7 @@ Email: msyk [at] hgsn.info (個人宛)
 
 * [情報処理学会](http://www.ipsj.or.jp/)
 * [日本ソフトウェア科学会](http://www.jssst.or.jp/)
-* [IEEE]((http://www.ieee.org/)
+* [IEEE](http://www.ieee.org/)
     * IEEE Computer Society
     * IEEE Communications Society
 * [ACM](http://www.acm.org/)
