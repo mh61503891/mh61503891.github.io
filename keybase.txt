@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/61503891
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://msyk.hgsn.info
+  * I am 61503891 (https://keybase.io/61503891) on keybase.
+  * I have a public key with fingerprint 1E12 A8D7 F345 B577 E791  3FE7 93D0 10BE 94BA DD0E
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "1e12a8d7f345b577e7913fe793d010be94badd0e",
+            "host": "keybase.io",
+            "key_id": "93d010be94badd0e",
+            "uid": "7b43be354f0b21560ea853026f6d4d00",
+            "username": "61503891"
+        },
+        "service": {
+            "hostname": "msyk.hgsn.info",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1405360512,
+    "expire_in": 157680000,
+    "prev": "b3c0b1e1ff4da549c64ae1420706f3dcd42fca604e0205a53c82423135c84146",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.23
+Comment: https://keybase.io/crypto
+
+yMHzAnicbZFtSFRZGMdnNMXGfNlNUasPcUOE0PHce8+9c2fAkP3iy+7SRMa6IA33
+5dyZg3rvOPfO6DiKBjF+6UuxuF+2VVoRKUghQlTwpQbszZAUSUo2YRvaAtMcWVgy
+PVfsW+fDOZz/83v+z3POk8hJtznsJ+4mnrycLKyxP53dDtsuJkp6Y5SkK1HKE6Oa
+0cGhYs2PQsEQ1kzKQ9GIZkRBcaks5CTO5UIuN82qZGcVQAMJuaEkKgpAVDkV0A0r
+g9hIooGcWCcaufiwQtRv8OGDgEuCrIRYDqpAYmiOB0gUOBYwvMorUAHAAg0U0sRW
+RGie5gAruGmqu5wiagTLRI0dlD4kWo1oszPgNzQn1lSrhWBIN3VZbyGxgGkGPVaq
+GQ1abDuSfIcuPglrCnk5SYigkIF1jfLQhJRNbNnSEHAsDziaKadQRxCHkA9bBOfi
+BUCWVQZFiKXEykAin6aqUBE56JZ5KCIaMsAFeJVVZAUyqizyACLAAE7kWFlgIMPS
+LCcLkIY8qW+gNk2nPDxpU/QTSwP7NdEMhxDV/WC26YjN7rBlZqRZs7M5juZ/nWgu
+lWUbx+vhY1kb/5R+D+69rq1Yqarqn+q983woz+ZprDy5srwdGbja9XCoNuNmyt1b
+92htobvzrz9+2Xi7gb2p3MR2tGA5ONGijcmL2UU1nXM5Yw2jt2tmHNPK6U+/bl0z
+d687swV69Pj6+Mf/SwWHudrTVoVH4nkLE8VN7T94YpXxxiVY1DfV9fOpf3c479ZU
+8n1T5oJzJVVZ2DHyXQHH959J/j1zqfpKwWD65QE3+Gn4hTb/pcw73Z58k1rP3zu7
+mm9f+rNu/vfYbtpQRbH3x5LP9fHH9zdn13YCSjxZvfhbMnbj1ty5hg+bgb7hyeX6
+V8+c0f/O48GyrHervvBez4V9y2cV0w==
+=JwyM
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/61503891
+
+==================================================================

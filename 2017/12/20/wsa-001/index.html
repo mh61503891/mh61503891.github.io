@@ -1,0 +1,694 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Masayuki Higashino&#39;s Website">
+    <title>マイクロサービスアーキテクチャのための餅的実行基盤構想 - Masayuki Higashino&#39;s Website</title>
+    <meta name="author" content="Masayuki Higashino">
+    
+    
+    
+        
+            <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
+        
+    
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Masayuki Higashino","sameAs":["https://github.com/","https://twitter.com/","https://facebook.com/"],"image":"mh61503891.png"},"articleBody":"第1回Web System Architecture研究会（WSA研）の予稿です。\n\n\n著者: 東野 正幸 (Higashino, Masayuki)\nキーワード\nマイクロサービス\nモノリシックサービス\nウェブサービス\nフレームワーク\nモバイルエージェント\n\n1. はじめに1.1 研究背景情報通信技術の発展と共に情報システムは複雑化してきた。実空間の人とモノが、情報ネットワークを介して相互に繋がり、自律的かつ実時間でお互いに影響を及ぼしあえる社会となった。また、プログラミング教育の普及やさらなる情報通信技術の発展により、人々は今後ますます有機的に情報システムを複雑化させてゆくと考えられる。\n複雑化する情報システムを人間が理解可能とする手段として、人々はこれまでソフトウェア工学を駆使し、その複雑性に対応してきた。複雑性に対応するための基礎的な考え方として、問題の抽象化と分割が挙げられる。近年では、マイクロサービスアーキテクチャと呼ばれ、情報システムをサービスと呼ばれる小さな独立性の高いサブシステムに分割し、それらを相互に連携させて動作させる技術が、ウェブシステムやクラウドサービスの分野で普及している。また、人間が複雑な情報システムと容易に意思疎通を可能にするための自律性、協調性、反応性といった生物的な特性を与えるエージェント技術も浸透している。\n多数のあらゆるモノ（物、人、生物、データ、プロセス等）が情報ネットワークを介して影響を及ぼしあい、そして多数の情報システムが分割・統合・複製・生成・消滅し、時々刻々と構造が変化する状況において、これらを管理することは難しい問題である。\nこのような問題に対処するために、これまで多種多様なモノを透過的かつ効率的に扱うための基盤や自己適応により変化に対応する機構が、ウェブシステム、並列分散処理技術、クラウド技術、仮想化技術、及びソフトウェア工学の分野で研究され提案されている。\n1.2 研究目的ウェブサービスにどの程度の需要が発生するかを予測することは難しい問題である。高い需要が発生している場合、メンテナンスに伴うウェブサービス全体の停止は、機会損失につながる可能性があるため、可能な限り停止する機能を小さく局所化することが有効である。また、大規模化したサービスの統合テストには高いコストを要するため、ビジネスに基づいたドメイン単位でテストするための開発範囲の局所化が有効である。このような背景からマイクロサービスと呼ばれるアーキテクチャが普及しつつある[1, 2, 3, 4, 5]。マイクロサービスとは、単一のアプリケーションを複数の小さなサービスの組み合わせにより開発する手法であり、大規模なソフトウェアをビジネスに基づいたドメイン単位で分割することで開発範囲を局所化しようとする意図を含んでいる。\nしかし、ウェブサービスを開発する場合、初めからマイクロサービスに基づくアーキテクチャとして構築することは、開発にかかる初期コストを大きくする可能性がある。一般的に、マイクロサービスのような動的で疎結合かつ高い凝縮度を持つ小さなソフトウェア部品でシステムを構築するには高度な技術を要する。リリースして間もない小中規模のウェブサービスの開発効率においては、Ruby on RailsやCake PHPなどのモノリシックなフレームワークを用いて開発する方が効率的であると考えられる。\nモノリシックなフレームワークは三層アーキテクチャなどの比較的数の少ない層にシステムが分割されている場合が多いが、既存の層をさらに多数の層や横方向にモジュール分割することはあまり考慮されていない。さらにモノリシックなフレームワークで開発されたウェブサービスをマイクロサービスへ構造変化させるには、ビジネスに基づくドメインの設計だけでなく、既存技術を組み合わせた際に発生する様々な技術的な制約条件を満たす必要がある。つまり、ウェブサービスの初期段階においてはモノリシックなフレームワークで開発した方が効率的である一方で、ウェブサービスが成長するにつれてマイクロサービスアーキテクチャの優位性が高まるものの、そのアーキテクチャの変更はより複雑になり非常に高度な技術を要するという問題がある。この難しさの要因は、これまでに我々が作り上げてきた、HTTPに基づくリクエスト/レスポンス型プロトコルや三層アーキテクチャを前提をしたモノリシックなフレームワークがもたらす技術的制約に一因があるのではないかと考えられる。\n本発表では、HTTPのリクエスト/レスポンス型といった通信プロトコルの方式や三層アーキテクチャといった多くのウェブアプリケーションフレームワークが前提としている技術的な制約を持たないウェブサービスフレームワークの実現方法を考察する。このフームワークにより、ウェブサービスの任意箇所での分割・統合・複製・生成・消滅の自由を保障し、それらの操作による性能的影響を観測的に評価可能することで、エンジニアが餅のようにウェブサービスをこねながらシステムの要件を満たす世界を構築したい。これにより、エンジニアはドメイン駆動開発におけるドメイン設計と性能要件を満たすための一貫性のある定量的・定性的な議論に集中でき、すごく幸せな世界が広がるのでは無いかと考えている。\n2. 関連研究プロセスの自己組織化や自動管理に関する研究は活発に行われている[6,7]。しかし、これらの手法の多くは既存のプロセスを効果的に連携させるための手法であり、モノリシックサービスからマイクロサービスへ容易に構造を変化させるための手段を提供するものではない。\nクラウドコンピューティングの分野ではQoS制御のために仮想マシンが動作する物理的なホストの場所を動的に変更する研究が進められている[8]。仮想マシンのライブマイグレーションは、仮想マシン内の複数のリソースが複数のホストマシンにまたがって同時にフラグメント化され、なおかつ同時にアクティブな状態で実行される。この技術はモノリシックサービスを複数のマイクロサービスへ透過的に分割するための技術として有用であると考えられる。しかし、これらの仮想マシンのライブマイグレーション技術では、ライブマイグレーションにより1つの仮想マシンが2つ以上のインスタンスに分割され、その後独立して動作することは想定されておらず、モノリシックサービスをマイクロサービスへ分割する場合とは条件が異なる。\n3. アイデアマイクロサービスの開発においてはビジネスロジック単位で個々のマイクロサービスを設計する場合が多い。既存のモノリシックサービスをマイクロサービスに分割する場合、各マイクロービスが担当するビジネスロジックが疎結合性と高凝縮性の両方を達成できる領域を探索する方法が有効である[1]。しかし、モノリシックサービスをマイクロサービスへ分割する場合には、この領域が技術的境界を越える可能性がある。例えば、三層アーキテクチャに基づいたフレームワークにおいては、特定のデータとその処理に関するサービスを独立させてマイクロサービスとして分離したい場合にこれらの層を横断する可能性がある。\nこのため、既存のモノリシックなフレームワークをそのままマイクロサービスのアーキテクチャに転用することは技術的境界により難しい。そこで、データの保持とデータの処理の両方が可能な独立した小さなソフトウェア部品であるモバイルエージェントをマイクロサービスのフレームワークとして採用することでこの問題を解決できると考えられる。\n本アイデアの実現には、モバイルエージェントの物理的な場所やモバイルエージェント間の通信の高度な仮想化が必要になる。モバイルエージェント群が正しくシステムのドメイン群を表現していれば、ドメインを分割したり、そのドメインを持つエージェントを異なるホストへ移動させても、システムとして動作する。これには同じホストで通信しているエージェントと異なるホストで通信しているエージェントがドメインモデルの上では同一のものとして開発できるようなフレームワークが必要である。\nただし、システムが動作する計算機群の物理的構造を考慮せずドメインモデルにのみ基づいてシステムを分割すれば性能が低下する場合がある。一般的には、計算機群の物理的なトポロジや通信プロトコルといった技術的制約を考慮してシステムを分割するが、本提案で重要な点はこれらの技術制約を排して分割容易性を優先することである。「性能的問題は全て後回しにしてしまえ！」を実現したい。仮に性能が低下した原因を把握できるのであれば、特に問題の大きい性能的問題を避けるように別角度で分割する（餅を伸ばしたりくっ付けたりする）アプローチをとる。これにはモバイルエージェントのデバッガ及びプロファイラが必要になる。これにより、システムの構造変化に対する容易性が結果的に性能的問題の解決も容易にする可能性がある。\nさらに、モバイルエージェントは柔軟に計算機間を移動可能であるため通信プロトコルとしても機能する。これは、HTTPのリクエスト/レスポンス型プロトコルやWebSocketの双方向型プロトコルなど様々な通信プロトコルに対応可能であることを意味する。\n4. 課題いくつか乗り越える必要のある課題があるので以下に記す。\n4.1 原始的アーキテクチャの設計多くの情報システムは多層アーキテクチャを採用しており、層ごとにアーキテクチャが分かれている。このため、プログラムの実行方式やデータの処理方式が層ごとに異なる。このような多層アーキテクチャは層単位の技術の交換容易性を高めるものの、その反面で各々の層に点在するプログラムとデータを横断的に統合したり分割したりすることは難しく、マイクロサービスのような細粒度の情報システムの分割や統合の実施では層の境界が技術的境界となり制約になる。このため、情報システムに対して、任意の分割・統合・複製・生成・消滅を可能にする自由度を与えるには、情報システム全体で統一されたプログラムの実行方式とデータの処理方式を定義する必要がある。これは、エージェント間のメッセージ交換とエージェントの計算機間の移動によって分散システムを実現するモバイルエージェント技術（※MASIF、FIPAなどによって標準仕様が提案されている。）を応用できると考えられる。これにより自由に分割・統合・複製・生成・消滅を実施可能な情報システムの原始的アーキテクチャを明らかにする。\n4.2 トラストの担保機構の設計情報システムにおけるトラストには主に2種類ある。1つはプログラムのトラストである。これには、情報システムを構成するプログラムが信頼可能かどうかを監査・統制する仕組みが、Grafeasと呼ばれるAPIなどによって提供され始めており、この知見を利用できる。もう1つは、データのトラストである。多数のサービスで構成される情報システムにおいて、あるデータが、どこで生産され、どのサービスにおいて入力され、経由し、処理され、出力され、どこで消費されたか、といったデータの生産から消費までのトレーサビリティを担保することで検証可能になると考えられる。そこで、サービスの分割・統合・複製・生成・消滅を実施した場合に、それぞれのサービス間の家系図を表すグラフを管理し、データ処理（入力、加工、出力）の履歴と共に記録することで、データのトレーサビリティを確保する。これにより、あるデータどのように処理されてきたのかを追跡可能になり、データのトラストが検証可能になる。\n4.3 定量的分析機構の設計情報システムを任意のサービスとして任意の機能で分割・統合・複製・生成・消滅可能にし、かつサービス間でのデータのトレーサビリティを担保することで、エンジニアは既存技術による仕様的制約や性能的制約の保留しながら現実の問題領域のドメインに基づいて情報システムの構造変更が可能になると考えられる。しかし、理想的なドメインのモデルであっても、そのままでは性能的に実用できない場合がある。このため、エンジニアが理想的なドメインのモデルを使用し、かつシステムがデータのトレーサビリティを担保した上で、ボトルネックになっているサービスの性能改善や最適化を後から実施できる必要がある。そのために、各サービスでの処理負荷とサービス間のデータのトラフィックを測定・評価する機構を設計する。これにより、トラスト性と現実の問題領域を良く表現したドメインに基づいたモデルと、情報システムの性能を満たした、システムの構造をインタラクティブに見つけ出すことが可能になる。\n4.4 定性的分析機構の設計情報システムを構成する複数のサービスがどのような関係で連携しているかを分析する方法はこれまでに多数提案されている（Martin Garriga: Towards a Taxonomy of Microservices Architectures, 2017）。しかし、これらの手法は、サービス間の関連を表現できるが、情報システムの分割・統合・複製・生成・消滅による構造変更の差分を記録・表現することはできない。トラスト性を担保するためにプログラムとデータのトレーサビリティを保証するためには、あるサービスがどのサービスから分割されたものか、または複製されたものか、それとも新しく生成されたものかを追跡できる必要がある。オペレーティングシステムにおいてはプロセスやスレッドにおいて実現できているが、提案機構においては、ネットワークで接続された複数の計算機間を横断しても追跡できる機構が新たに必要となる。\n4.5 既存サービスのラッピング機構の設計本研究で提案する機構は、まず初めに小さな情報システムがあり、システムに対する需要や提供する機能の変化に応じて、柔軟にサービスを分割・統合・複製・生成・消滅させてゆくことを主な運用シナリオとして想定している。しかし、既存の情報システムから本研究で提案する機構へ移行する手段も必要となる。そこで、既存の情報システムを構成している各サービスを、本機構でのサービスへマッピングし、徐々に本機構へ移行させる方式を検討する。そのためには、既存サービスをラッピングする方式として、デザインパターンに基づき、プロキシ方式（同じ仕様のサービスを1対1で対応させる。）、アダプタ方式（異なる仕様のサービスを1対1で対応させる。）、ファサード方式（サービスをn対nで対応させる。）を検討する。これらのデザインパターンにより、サービスを対応させ、徐々に既存システムのサービスから提案機構のサービスへ移行させる方法を検討する。\n4.6 フレームワークの設計と実装課題1〜5の成果を実現したフレームワークを設計及び実装する。また、提案フレームワークは、実用性を高めるために、一般的に普及しているAWSやHerokuなどのクラウドサービスにおいて実行可能な実装とする。特に、モノリシックアーキテクチャに基づくRuby on RailsやCakePHPといったウェブアプリケーションフレームワークから、分散型のアーキテクチャである提案フレームワークへ移行しやすいよう、ウェブサービスとの接続容易性を高めることを検討する。\n4.7 アプリケーションへの適用と評価提案機構を実アプリケーションに適用し、本研究の有用性と有効性の評価をする。\n5. おわりに本稿では、モバイルエージェント技術を用いてモノリシックなウェブサービスをマイクロサービスへ容易に分割できるフレームワークの実現方法について考察した。本提案で重要な点は、本フレームワークが多くのウェブサービスの開発で用いられる通信プロトコルの方式や三層アーキテクチャといった技術的制約を排除することである。この性質がモノリシックなウェブサービスからマイクロサービスへの移行を容易にし、ウェブサービスのリリース期から普及期までのシステムの構造的変更に流動性を与えることが可能になると考えられる。\n参考文献\nMicroservice Architecture: Aligning Principles, Practices, and Culture, http://shop.oreilly.com/product/0636920050308\nAwesome Microservices: A curated list of Microservice Architecture related principles and technologies, https://github.com/mfornos/awesome-microservices\nProceedings of the 1st Workshop on Formal Approaches for Advanced Computing Systems (FAACS 2017) co-located with SEFM 2017., http://fmse.di.unimi.it/faacs2017/\nTowards a Taxonomy of Microservices Architectures, http://fmse.di.unimi.it/faacs2017/papers/paperMSE3.pdf\nDesigning and Deploying Microservices, NGINX, https://www.nginx.com/resources/library/designing-deploying-microservices/\nA survey of methods and approaches for reliable dynamic service compositions, https://doi.org/10.1007/s11761-013-0153-3\nAn Architecture for Self-managing Microservices, https://doi.org/10.1145/2747470.2747474\nAvailability study on cloud computing environments: Live migration as a rejuvenation mechanism, https://doi.org/10.1109/DSN.2013.6575322\n\n謝辞本予稿の執筆にあたり、その基礎となったJAWS2017の原稿において議論して頂き、貴重なご助言を賜った @hamajyotan 氏にお礼申し上げます。\n本研究の一部はJSPS科研費15K15982の助成を受けた。\n","dateCreated":"2017-12-20T23:59:59+09:00","dateModified":"2021-04-03T01:34:39+09:00","datePublished":"2017-12-20T23:59:59+09:00","description":"第1回Web System Architecture研究会（WSA研）の予稿です。","headline":"マイクロサービスアーキテクチャのための餅的実行基盤構想","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://msyk.hgsn.info/2017/12/20/wsa-001/"},"publisher":{"@type":"Organization","name":"Masayuki Higashino","sameAs":["https://github.com/","https://twitter.com/","https://facebook.com/"],"image":"mh61503891.png","logo":{"@type":"ImageObject","url":"mh61503891.png"}},"url":"https://msyk.hgsn.info/2017/12/20/wsa-001/","keywords":"Web services, Microservices, Monolithic architectures, Frameworks, Mobile agents, Web System Architecture Study Group"}</script>
+    <meta name="description" content="第1回Web System Architecture研究会（WSA研）の予稿です。">
+<meta property="og:type" content="blog">
+<meta property="og:title" content="マイクロサービスアーキテクチャのための餅的実行基盤構想">
+<meta property="og:url" content="https://msyk.hgsn.info/2017/12/20/wsa-001/index.html">
+<meta property="og:site_name" content="Masayuki Higashino&#39;s Website">
+<meta property="og:description" content="第1回Web System Architecture研究会（WSA研）の予稿です。">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2017-12-20T14:59:59.000Z">
+<meta property="article:modified_time" content="2021-04-02T16:34:39.406Z">
+<meta property="article:author" content="Masayuki Higashino">
+<meta property="article:tag" content="Web services">
+<meta property="article:tag" content="Microservices">
+<meta property="article:tag" content="Monolithic architectures">
+<meta property="article:tag" content="Frameworks">
+<meta property="article:tag" content="Mobile agents">
+<meta property="article:tag" content="Web System Architecture Study Group">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@61503891">
+    
+    
+        
+    
+    
+        <meta property="og:image" content="https://msyk.hgsn.info/assets/images/mh61503891.png"/>
+    
+    
+    
+    
+    <!--STYLES-->
+    
+<link rel="stylesheet" href="/assets/css/style-hwyglkxgaacrhkpmcvojozxjwh3a9t0hzrfajxleqenwihtrtb8dhkjkfwof.min.css">
+
+    <!--STYLES END-->
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44054691-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-44054691-1');
+    </script>
+
+
+    
+
+    
+        
+            
+<link rel="stylesheet" href="/assets/css/gitment.css">
+
+        
+    
+</head>
+
+    <body>
+        <div id="blog">
+            <!-- Define author's picture -->
+
+
+    
+        
+            
+        
+    
+
+<header id="header" data-behavior="4">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <div class="header-title">
+        <a
+            class="header-title-link"
+            href="/"
+            aria-label=""
+        >
+            Masayuki Higashino&#39;s Website
+        </a>
+    </div>
+    
+        
+            <a
+                class="header-right-picture "
+                href="#about"
+                aria-label="Open the link: /#about"
+            >
+        
+        
+            <img class="header-picture" src="/assets/images/mh61503891.png" alt="Author&#39;s picture"/>
+        
+        </a>
+    
+</header>
+
+            <!-- Define author's picture -->
+
+
+
+        
+    
+
+<nav id="sidebar" data-behavior="4">
+    <div class="sidebar-container">
+        
+            <div class="sidebar-profile">
+                <a
+                    href="/#about"
+                    aria-label="Read more about the author"
+                >
+                    <img class="sidebar-profile-picture" src="/assets/images/mh61503891.png" alt="Author&#39;s picture"/>
+                </a>
+                <h4 class="sidebar-profile-name">Masayuki Higashino</h4>
+                
+                    <h5 class="sidebar-profile-bio"><p>Tottori University</p>
+</h5>
+                
+            </div>
+        
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="/"
+                            
+                            rel="noopener"
+                            title="Home"
+                        >
+                        <i class="sidebar-button-icon fa fa-home" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Home</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="/profile-ja"
+                            
+                            rel="noopener"
+                            title="Profile"
+                        >
+                        <i class="sidebar-button-icon fa fa-user" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Profile</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="/all-categories"
+                            
+                            rel="noopener"
+                            title="Categories"
+                        >
+                        <i class="sidebar-button-icon fa fa-bookmark" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Categories</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="/all-tags"
+                            
+                            rel="noopener"
+                            title="Tags"
+                        >
+                        <i class="sidebar-button-icon fa fa-tags" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Tags</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="/all-archives"
+                            
+                            rel="noopener"
+                            title="Archives"
+                        >
+                        <i class="sidebar-button-icon fa fa-archive" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Archives</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="https://github.com/"
+                            
+                                target="_blank"
+                            
+                            rel="noopener"
+                            title="GitHub"
+                        >
+                        <i class="sidebar-button-icon fab fa-github" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">GitHub</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="https://twitter.com/"
+                            
+                                target="_blank"
+                            
+                            rel="noopener"
+                            title="Twitter"
+                        >
+                        <i class="sidebar-button-icon fab fa-twitter" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Twitter</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="https://facebook.com/"
+                            
+                                target="_blank"
+                            
+                            rel="noopener"
+                            title="Facebook"
+                        >
+                        <i class="sidebar-button-icon fab fa-facebook" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Facebook</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="/atom.xml"
+                            
+                            rel="noopener"
+                            title="RSS"
+                        >
+                        <i class="sidebar-button-icon fa fa-rss" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">RSS</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+    </div>
+</nav>
+
+            
+            <div id="main" data-behavior="4"
+                 class="
+                        hasCoverMetaIn
+                        ">
+                
+<article class="post">
+    
+    
+        <div class="post-header main-content-wrap text-left">
+    
+        <h1 class="post-title">
+            マイクロサービスアーキテクチャのための餅的実行基盤構想
+        </h1>
+    
+    
+        <div class="post-meta">
+    <time datetime="2017-12-20T23:59:59+09:00">
+	
+		    Dec 20, 2017
+    	
+    </time>
+    
+</div>
+
+    
+</div>
+
+    
+    <div class="post-content markdown">
+        <div class="main-content-wrap">
+            <p><a target="_blank" rel="noopener" href="http://websystemarchitecture.hatenablog.jp/entry/2017/12/17/133301">第1回Web System Architecture研究会（WSA研）</a>の予稿です。</p>
+<span id="more"></span>
+
+<p>著者: 東野 正幸 (Higashino, Masayuki)</p>
+<h2 id="キーワード"><a href="#キーワード" class="headerlink" title="キーワード"></a>キーワード</h2><ul>
+<li>マイクロサービス</li>
+<li>モノリシックサービス</li>
+<li>ウェブサービス</li>
+<li>フレームワーク</li>
+<li>モバイルエージェント</li>
+</ul>
+<h2 id="1-はじめに"><a href="#1-はじめに" class="headerlink" title="1. はじめに"></a>1. はじめに</h2><h3 id="1-1-研究背景"><a href="#1-1-研究背景" class="headerlink" title="1.1 研究背景"></a>1.1 研究背景</h3><p>情報通信技術の発展と共に情報システムは複雑化してきた。実空間の人とモノが、情報ネットワークを介して相互に繋がり、自律的かつ実時間でお互いに影響を及ぼしあえる社会となった。また、プログラミング教育の普及やさらなる情報通信技術の発展により、人々は今後ますます有機的に情報システムを複雑化させてゆくと考えられる。</p>
+<p>複雑化する情報システムを人間が理解可能とする手段として、人々はこれまでソフトウェア工学を駆使し、その複雑性に対応してきた。複雑性に対応するための基礎的な考え方として、問題の抽象化と分割が挙げられる。近年では、マイクロサービスアーキテクチャと呼ばれ、情報システムをサービスと呼ばれる小さな独立性の高いサブシステムに分割し、それらを相互に連携させて動作させる技術が、ウェブシステムやクラウドサービスの分野で普及している。また、人間が複雑な情報システムと容易に意思疎通を可能にするための自律性、協調性、反応性といった生物的な特性を与えるエージェント技術も浸透している。</p>
+<p>多数のあらゆるモノ（物、人、生物、データ、プロセス等）が情報ネットワークを介して影響を及ぼしあい、そして多数の情報システムが分割・統合・複製・生成・消滅し、時々刻々と構造が変化する状況において、これらを管理することは難しい問題である。</p>
+<p>このような問題に対処するために、これまで多種多様なモノを透過的かつ効率的に扱うための基盤や自己適応により変化に対応する機構が、ウェブシステム、並列分散処理技術、クラウド技術、仮想化技術、及びソフトウェア工学の分野で研究され提案されている。</p>
+<h3 id="1-2-研究目的"><a href="#1-2-研究目的" class="headerlink" title="1.2 研究目的"></a>1.2 研究目的</h3><p>ウェブサービスにどの程度の需要が発生するかを予測することは難しい問題である。高い需要が発生している場合、メンテナンスに伴うウェブサービス全体の停止は、機会損失につながる可能性があるため、可能な限り停止する機能を小さく局所化することが有効である。また、大規模化したサービスの統合テストには高いコストを要するため、ビジネスに基づいたドメイン単位でテストするための開発範囲の局所化が有効である。このような背景からマイクロサービスと呼ばれるアーキテクチャが普及しつつある[1, 2, 3, 4, 5]。マイクロサービスとは、単一のアプリケーションを複数の小さなサービスの組み合わせにより開発する手法であり、大規模なソフトウェアをビジネスに基づいたドメイン単位で分割することで開発範囲を局所化しようとする意図を含んでいる。</p>
+<p>しかし、ウェブサービスを開発する場合、初めからマイクロサービスに基づくアーキテクチャとして構築することは、開発にかかる初期コストを大きくする可能性がある。一般的に、マイクロサービスのような動的で疎結合かつ高い凝縮度を持つ小さなソフトウェア部品でシステムを構築するには高度な技術を要する。リリースして間もない小中規模のウェブサービスの開発効率においては、Ruby on RailsやCake PHPなどのモノリシックなフレームワークを用いて開発する方が効率的であると考えられる。</p>
+<p>モノリシックなフレームワークは三層アーキテクチャなどの比較的数の少ない層にシステムが分割されている場合が多いが、既存の層をさらに多数の層や横方向にモジュール分割することはあまり考慮されていない。さらにモノリシックなフレームワークで開発されたウェブサービスをマイクロサービスへ構造変化させるには、ビジネスに基づくドメインの設計だけでなく、既存技術を組み合わせた際に発生する様々な技術的な制約条件を満たす必要がある。つまり、ウェブサービスの初期段階においてはモノリシックなフレームワークで開発した方が効率的である一方で、ウェブサービスが成長するにつれてマイクロサービスアーキテクチャの優位性が高まるものの、そのアーキテクチャの変更はより複雑になり非常に高度な技術を要するという問題がある。この難しさの要因は、これまでに我々が作り上げてきた、HTTPに基づくリクエスト/レスポンス型プロトコルや三層アーキテクチャを前提をしたモノリシックなフレームワークがもたらす技術的制約に一因があるのではないかと考えられる。</p>
+<p>本発表では、HTTPのリクエスト/レスポンス型といった通信プロトコルの方式や三層アーキテクチャといった多くのウェブアプリケーションフレームワークが前提としている技術的な制約を持たないウェブサービスフレームワークの実現方法を考察する。このフームワークにより、ウェブサービスの任意箇所での分割・統合・複製・生成・消滅の自由を保障し、それらの操作による性能的影響を観測的に評価可能することで、エンジニアが餅のようにウェブサービスをこねながらシステムの要件を満たす世界を構築したい。これにより、エンジニアはドメイン駆動開発におけるドメイン設計と性能要件を満たすための一貫性のある定量的・定性的な議論に集中でき、すごく幸せな世界が広がるのでは無いかと考えている。</p>
+<h2 id="2-関連研究"><a href="#2-関連研究" class="headerlink" title="2. 関連研究"></a>2. 関連研究</h2><p>プロセスの自己組織化や自動管理に関する研究は活発に行われている[6,7]。しかし、これらの手法の多くは既存のプロセスを効果的に連携させるための手法であり、モノリシックサービスからマイクロサービスへ容易に構造を変化させるための手段を提供するものではない。</p>
+<p>クラウドコンピューティングの分野ではQoS制御のために仮想マシンが動作する物理的なホストの場所を動的に変更する研究が進められている[8]。仮想マシンのライブマイグレーションは、仮想マシン内の複数のリソースが複数のホストマシンにまたがって同時にフラグメント化され、なおかつ同時にアクティブな状態で実行される。この技術はモノリシックサービスを複数のマイクロサービスへ透過的に分割するための技術として有用であると考えられる。しかし、これらの仮想マシンのライブマイグレーション技術では、ライブマイグレーションにより1つの仮想マシンが2つ以上のインスタンスに分割され、その後独立して動作することは想定されておらず、モノリシックサービスをマイクロサービスへ分割する場合とは条件が異なる。</p>
+<h2 id="3-アイデア"><a href="#3-アイデア" class="headerlink" title="3. アイデア"></a>3. アイデア</h2><p>マイクロサービスの開発においてはビジネスロジック単位で個々のマイクロサービスを設計する場合が多い。既存のモノリシックサービスをマイクロサービスに分割する場合、各マイクロービスが担当するビジネスロジックが疎結合性と高凝縮性の両方を達成できる領域を探索する方法が有効である[1]。しかし、モノリシックサービスをマイクロサービスへ分割する場合には、この領域が技術的境界を越える可能性がある。例えば、三層アーキテクチャに基づいたフレームワークにおいては、特定のデータとその処理に関するサービスを独立させてマイクロサービスとして分離したい場合にこれらの層を横断する可能性がある。</p>
+<p>このため、既存のモノリシックなフレームワークをそのままマイクロサービスのアーキテクチャに転用することは技術的境界により難しい。そこで、データの保持とデータの処理の両方が可能な独立した小さなソフトウェア部品である<a target="_blank" rel="noopener" href="https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88">モバイルエージェント</a>をマイクロサービスのフレームワークとして採用することでこの問題を解決できると考えられる。</p>
+<p>本アイデアの実現には、モバイルエージェントの物理的な場所やモバイルエージェント間の通信の高度な仮想化が必要になる。モバイルエージェント群が正しくシステムのドメイン群を表現していれば、ドメインを分割したり、そのドメインを持つエージェントを異なるホストへ移動させても、システムとして動作する。これには同じホストで通信しているエージェントと異なるホストで通信しているエージェントがドメインモデルの上では同一のものとして開発できるようなフレームワークが必要である。</p>
+<p>ただし、システムが動作する計算機群の物理的構造を考慮せずドメインモデルにのみ基づいてシステムを分割すれば性能が低下する場合がある。一般的には、計算機群の物理的なトポロジや通信プロトコルといった技術的制約を考慮してシステムを分割するが、本提案で重要な点はこれらの技術制約を排して分割容易性を優先することである。「性能的問題は全て後回しにしてしまえ！」を実現したい。仮に性能が低下した原因を把握できるのであれば、特に問題の大きい性能的問題を避けるように別角度で分割する（餅を伸ばしたりくっ付けたりする）アプローチをとる。これにはモバイルエージェントのデバッガ及びプロファイラが必要になる。これにより、システムの構造変化に対する容易性が結果的に性能的問題の解決も容易にする可能性がある。</p>
+<p>さらに、モバイルエージェントは柔軟に計算機間を移動可能であるため通信プロトコルとしても機能する。これは、HTTPのリクエスト/レスポンス型プロトコルやWebSocketの双方向型プロトコルなど様々な通信プロトコルに対応可能であることを意味する。</p>
+<h2 id="4-課題"><a href="#4-課題" class="headerlink" title="4. 課題"></a>4. 課題</h2><p>いくつか乗り越える必要のある課題があるので以下に記す。</p>
+<h3 id="4-1-原始的アーキテクチャの設計"><a href="#4-1-原始的アーキテクチャの設計" class="headerlink" title="4.1 原始的アーキテクチャの設計"></a>4.1 原始的アーキテクチャの設計</h3><p>多くの情報システムは多層アーキテクチャを採用しており、層ごとにアーキテクチャが分かれている。このため、プログラムの実行方式やデータの処理方式が層ごとに異なる。このような多層アーキテクチャは層単位の技術の交換容易性を高めるものの、その反面で各々の層に点在するプログラムとデータを横断的に統合したり分割したりすることは難しく、マイクロサービスのような細粒度の情報システムの分割や統合の実施では層の境界が技術的境界となり制約になる。このため、情報システムに対して、任意の分割・統合・複製・生成・消滅を可能にする自由度を与えるには、情報システム全体で統一されたプログラムの実行方式とデータの処理方式を定義する必要がある。これは、エージェント間のメッセージ交換とエージェントの計算機間の移動によって分散システムを実現するモバイルエージェント技術（※MASIF、FIPAなどによって標準仕様が提案されている。）を応用できると考えられる。これにより自由に分割・統合・複製・生成・消滅を実施可能な情報システムの原始的アーキテクチャを明らかにする。</p>
+<h3 id="4-2-トラストの担保機構の設計"><a href="#4-2-トラストの担保機構の設計" class="headerlink" title="4.2 トラストの担保機構の設計"></a>4.2 トラストの担保機構の設計</h3><p>情報システムにおけるトラストには主に2種類ある。1つはプログラムのトラストである。これには、情報システムを構成するプログラムが信頼可能かどうかを監査・統制する仕組みが、Grafeasと呼ばれるAPIなどによって提供され始めており、この知見を利用できる。もう1つは、データのトラストである。多数のサービスで構成される情報システムにおいて、あるデータが、どこで生産され、どのサービスにおいて入力され、経由し、処理され、出力され、どこで消費されたか、といったデータの生産から消費までのトレーサビリティを担保することで検証可能になると考えられる。そこで、サービスの分割・統合・複製・生成・消滅を実施した場合に、それぞれのサービス間の家系図を表すグラフを管理し、データ処理（入力、加工、出力）の履歴と共に記録することで、データのトレーサビリティを確保する。これにより、あるデータどのように処理されてきたのかを追跡可能になり、データのトラストが検証可能になる。</p>
+<h3 id="4-3-定量的分析機構の設計"><a href="#4-3-定量的分析機構の設計" class="headerlink" title="4.3 定量的分析機構の設計"></a>4.3 定量的分析機構の設計</h3><p>情報システムを任意のサービスとして任意の機能で分割・統合・複製・生成・消滅可能にし、かつサービス間でのデータのトレーサビリティを担保することで、エンジニアは既存技術による仕様的制約や性能的制約の保留しながら現実の問題領域のドメインに基づいて情報システムの構造変更が可能になると考えられる。しかし、理想的なドメインのモデルであっても、そのままでは性能的に実用できない場合がある。このため、エンジニアが理想的なドメインのモデルを使用し、かつシステムがデータのトレーサビリティを担保した上で、ボトルネックになっているサービスの性能改善や最適化を後から実施できる必要がある。そのために、各サービスでの処理負荷とサービス間のデータのトラフィックを測定・評価する機構を設計する。これにより、トラスト性と現実の問題領域を良く表現したドメインに基づいたモデルと、情報システムの性能を満たした、システムの構造をインタラクティブに見つけ出すことが可能になる。</p>
+<h3 id="4-4-定性的分析機構の設計"><a href="#4-4-定性的分析機構の設計" class="headerlink" title="4.4 定性的分析機構の設計"></a>4.4 定性的分析機構の設計</h3><p>情報システムを構成する複数のサービスがどのような関係で連携しているかを分析する方法はこれまでに多数提案されている（Martin Garriga: Towards a Taxonomy of Microservices Architectures, 2017）。しかし、これらの手法は、サービス間の関連を表現できるが、情報システムの分割・統合・複製・生成・消滅による構造変更の差分を記録・表現することはできない。トラスト性を担保するためにプログラムとデータのトレーサビリティを保証するためには、あるサービスがどのサービスから分割されたものか、または複製されたものか、それとも新しく生成されたものかを追跡できる必要がある。オペレーティングシステムにおいてはプロセスやスレッドにおいて実現できているが、提案機構においては、ネットワークで接続された複数の計算機間を横断しても追跡できる機構が新たに必要となる。</p>
+<h3 id="4-5-既存サービスのラッピング機構の設計"><a href="#4-5-既存サービスのラッピング機構の設計" class="headerlink" title="4.5 既存サービスのラッピング機構の設計"></a>4.5 既存サービスのラッピング機構の設計</h3><p>本研究で提案する機構は、まず初めに小さな情報システムがあり、システムに対する需要や提供する機能の変化に応じて、柔軟にサービスを分割・統合・複製・生成・消滅させてゆくことを主な運用シナリオとして想定している。しかし、既存の情報システムから本研究で提案する機構へ移行する手段も必要となる。そこで、既存の情報システムを構成している各サービスを、本機構でのサービスへマッピングし、徐々に本機構へ移行させる方式を検討する。そのためには、既存サービスをラッピングする方式として、デザインパターンに基づき、プロキシ方式（同じ仕様のサービスを1対1で対応させる。）、アダプタ方式（異なる仕様のサービスを1対1で対応させる。）、ファサード方式（サービスをn対nで対応させる。）を検討する。これらのデザインパターンにより、サービスを対応させ、徐々に既存システムのサービスから提案機構のサービスへ移行させる方法を検討する。</p>
+<h3 id="4-6-フレームワークの設計と実装"><a href="#4-6-フレームワークの設計と実装" class="headerlink" title="4.6 フレームワークの設計と実装"></a>4.6 フレームワークの設計と実装</h3><p>課題1〜5の成果を実現したフレームワークを設計及び実装する。また、提案フレームワークは、実用性を高めるために、一般的に普及しているAWSやHerokuなどのクラウドサービスにおいて実行可能な実装とする。特に、モノリシックアーキテクチャに基づくRuby on RailsやCakePHPといったウェブアプリケーションフレームワークから、分散型のアーキテクチャである提案フレームワークへ移行しやすいよう、ウェブサービスとの接続容易性を高めることを検討する。</p>
+<h3 id="4-7-アプリケーションへの適用と評価"><a href="#4-7-アプリケーションへの適用と評価" class="headerlink" title="4.7 アプリケーションへの適用と評価"></a>4.7 アプリケーションへの適用と評価</h3><p>提案機構を実アプリケーションに適用し、本研究の有用性と有効性の評価をする。</p>
+<h2 id="5-おわりに"><a href="#5-おわりに" class="headerlink" title="5. おわりに"></a>5. おわりに</h2><p>本稿では、モバイルエージェント技術を用いてモノリシックなウェブサービスをマイクロサービスへ容易に分割できるフレームワークの実現方法について考察した。本提案で重要な点は、本フレームワークが多くのウェブサービスの開発で用いられる通信プロトコルの方式や三層アーキテクチャといった技術的制約を排除することである。この性質がモノリシックなウェブサービスからマイクロサービスへの移行を容易にし、ウェブサービスのリリース期から普及期までのシステムの構造的変更に流動性を与えることが可能になると考えられる。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ol>
+<li>Microservice Architecture: Aligning Principles, Practices, and Culture, <a target="_blank" rel="noopener" href="http://shop.oreilly.com/product/0636920050308">http://shop.oreilly.com/product/0636920050308</a></li>
+<li>Awesome Microservices: A curated list of Microservice Architecture related principles and technologies, <a target="_blank" rel="noopener" href="https://github.com/mfornos/awesome-microservices">https://github.com/mfornos/awesome-microservices</a></li>
+<li>Proceedings of the 1st Workshop on Formal Approaches for Advanced Computing Systems (FAACS 2017) co-located with SEFM 2017., <a target="_blank" rel="noopener" href="http://fmse.di.unimi.it/faacs2017/">http://fmse.di.unimi.it/faacs2017/</a></li>
+<li>Towards a Taxonomy of Microservices Architectures, <a target="_blank" rel="noopener" href="http://fmse.di.unimi.it/faacs2017/papers/paperMSE3.pdf">http://fmse.di.unimi.it/faacs2017/papers/paperMSE3.pdf</a></li>
+<li>Designing and Deploying Microservices, NGINX, <a target="_blank" rel="noopener" href="https://www.nginx.com/resources/library/designing-deploying-microservices/">https://www.nginx.com/resources/library/designing-deploying-microservices/</a></li>
+<li>A survey of methods and approaches for reliable dynamic service compositions, <a target="_blank" rel="noopener" href="https://doi.org/10.1007/s11761-013-0153-3">https://doi.org/10.1007/s11761-013-0153-3</a></li>
+<li>An Architecture for Self-managing Microservices, <a target="_blank" rel="noopener" href="https://doi.org/10.1145/2747470.2747474">https://doi.org/10.1145/2747470.2747474</a></li>
+<li>Availability study on cloud computing environments: Live migration as a rejuvenation mechanism, <a target="_blank" rel="noopener" href="https://doi.org/10.1109/DSN.2013.6575322">https://doi.org/10.1109/DSN.2013.6575322</a></li>
+</ol>
+<h2 id="謝辞"><a href="#謝辞" class="headerlink" title="謝辞"></a>謝辞</h2><p>本予稿の執筆にあたり、その基礎となった<a target="_blank" rel="noopener" href="http://jaws-web.org/event/jaws2017/proceedings/">JAWS2017</a>の原稿において議論して頂き、貴重なご助言を賜った @hamajyotan 氏にお礼申し上げます。</p>
+<p>本研究の一部はJSPS科研費<a target="_blank" rel="noopener" href="https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-15K15982/">15K15982</a>の助成を受けた。</p>
+
+            
+
+
+        </div>
+    </div>
+    <div id="post-footer" class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-none-link" href="/tags/Frameworks/" rel="tag">Frameworks</a> <a class="tag tag--primary tag--small t-none-link" href="/tags/Microservices/" rel="tag">Microservices</a> <a class="tag tag--primary tag--small t-none-link" href="/tags/Mobile-agents/" rel="tag">Mobile agents</a> <a class="tag tag--primary tag--small t-none-link" href="/tags/Monolithic-architectures/" rel="tag">Monolithic architectures</a> <a class="tag tag--primary tag--small t-none-link" href="/tags/Web-System-Architecture-Study-Group/" rel="tag">Web System Architecture Study Group</a> <a class="tag tag--primary tag--small t-none-link" href="/tags/Web-services/" rel="tag">Web services</a>
+
+            </div>
+        
+        
+            <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    
+                <a
+                    class="post-action-btn btn btn--default tooltip--top"
+                    href="/2019/02/28/profile/"
+                    data-tooltip="Profile Page"
+                    aria-label="PREVIOUS: Profile Page"
+                >
+                    
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                    </a>
+            </li>
+            <li class="post-action">
+                
+                    
+                <a
+                    class="post-action-btn btn btn--default tooltip--top"
+                    href="/2017/07/22/new-website/"
+                    data-tooltip="New Website"
+                    aria-label="NEXT: New Website"
+                >
+                    
+                        <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a
+                class="post-action-btn btn btn--default btn-open-shareoptions"
+                href="#btn-open-shareoptions"
+                aria-label="Share this post"
+            >
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a
+                    class="post-action-btn btn btn--default"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://msyk.hgsn.info/2017/12/20/wsa-001/"
+                    title="Share on Facebook"
+                    aria-label="Share on Facebook"
+                >
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a
+                    class="post-action-btn btn btn--default"
+                    target="new" href="https://twitter.com/intent/tweet?text=マイクロサービスアーキテクチャのための餅的実行基盤構想&amp;url=https://msyk.hgsn.info/2017/12/20/wsa-001/&amp;via=61503891"
+                    title="Share on Twitter"
+                    aria-label="Share on Twitter"
+                >
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+        
+            
+                <li class="post-action">
+                    <a
+                        class="post-action-btn btn btn--default"
+                        href="#gitment"
+                        aria-label="Leave a comment"
+                    >
+                        <i class="fa fa-comment"></i>
+                    </a>
+                </li>
+            
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+            
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+        
+        
+            
+                <div id="gitment"></div>
+            
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2021 Masayuki Higashino. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    
+                <a
+                    class="post-action-btn btn btn--default tooltip--top"
+                    href="/2019/02/28/profile/"
+                    data-tooltip="Profile Page"
+                    aria-label="PREVIOUS: Profile Page"
+                >
+                    
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                    </a>
+            </li>
+            <li class="post-action">
+                
+                    
+                <a
+                    class="post-action-btn btn btn--default tooltip--top"
+                    href="/2017/07/22/new-website/"
+                    data-tooltip="New Website"
+                    aria-label="NEXT: New Website"
+                >
+                    
+                        <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a
+                class="post-action-btn btn btn--default btn-open-shareoptions"
+                href="#btn-open-shareoptions"
+                aria-label="Share this post"
+            >
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a
+                    class="post-action-btn btn btn--default"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://msyk.hgsn.info/2017/12/20/wsa-001/"
+                    title="Share on Facebook"
+                    aria-label="Share on Facebook"
+                >
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a
+                    class="post-action-btn btn btn--default"
+                    target="new" href="https://twitter.com/intent/tweet?text=マイクロサービスアーキテクチャのための餅的実行基盤構想&amp;url=https://msyk.hgsn.info/2017/12/20/wsa-001/&amp;via=61503891"
+                    title="Share on Twitter"
+                    aria-label="Share on Twitter"
+                >
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+        
+            
+                <li class="post-action">
+                    <a
+                        class="post-action-btn btn btn--default"
+                        href="#gitment"
+                        aria-label="Leave a comment"
+                    >
+                        <i class="fa fa-comment"></i>
+                    </a>
+                </li>
+            
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+            
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+                </div>
+                
+    <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+        <i id="btn-close-shareoptions" class="fa fa-times"></i>
+        <ul class="share-options">
+            
+                
+                
+                <li class="share-option">
+                    <a
+                        class="share-option-btn"
+                        target="new"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https://msyk.hgsn.info/2017/12/20/wsa-001/"
+                        aria-label="Share on Facebook"
+                    >
+                        <i class="fab fa-facebook" aria-hidden="true"></i><span>Share on Facebook</span>
+                    </a>
+                </li>
+            
+                
+                
+                <li class="share-option">
+                    <a
+                        class="share-option-btn"
+                        target="new"
+                        href="https://twitter.com/intent/tweet?text=マイクロサービスアーキテクチャのための餅的実行基盤構想&amp;url=https://msyk.hgsn.info/2017/12/20/wsa-001/&amp;via=61503891"
+                        aria-label="Share on Twitter"
+                    >
+                        <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
+                    </a>
+                </li>
+            
+        </ul>
+    </div>
+
+
+            
+        </div>
+        
+
+
+    
+        
+    
+
+<div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-times"></i>
+        </div>
+        
+            <img id="about-card-picture" src="/assets/images/mh61503891.png" alt="Author&#39;s picture"/>
+        
+            <h4 id="about-card-name">Masayuki Higashino</h4>
+        
+            <div id="about-card-bio"><p>Tottori University</p>
+</div>
+        
+        
+            <div id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>Assistant Professor</p>
+
+            </div>
+        
+        
+            <div id="about-card-location">
+                <i class="fa fa-map-marker-alt"></i>
+                <br/>
+                Tottori, Japan
+            </div>
+        
+    </div>
+</div>
+
+        
+        
+<div id="cover" style="background-image:url('/assets/images/cover-lake-koyama.jpg');"></div>
+        <!--SCRIPTS-->
+
+<script src="/assets/js/script-va21cg2r4ulspamkompub5xw37w18z3lu84bjygbhkudexpajrlrobhldhxx.min.js"></script>
+
+<!--SCRIPTS END-->
+
+
+    
+        
+<script src="/assets/js/gitment.js"></script>
+
+        <script type="text/javascript">
+          (function() {
+            new Gitment({
+              id: 'https://msyk.hgsn.info/2017/12/20/wsa-001/',
+              owner: 'mh61503891',
+              repo: 'msyk.hgsn.info',
+              oauth: {
+                client_id: '346f7de93aab16029221',
+                client_secret: ''
+              }
+            }).render('gitment')
+          })()
+        </script>
+    
+
+
+
+
+    </body>
+</html>
